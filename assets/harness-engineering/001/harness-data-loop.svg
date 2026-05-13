@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Harness Engineering Evidence Loop</title>
+  <desc id="desc">A feedback loop diagram from requirements to scenarios, execution, telemetry, analysis, decision, and system change.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#334155" />
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.16" />
+    </filter>
+  </defs>
+  <rect width="1200" height="760" fill="#ffffff" />
+  <text x="600" y="58" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#0f172a">Harness Evidence Loop</text>
+  <text x="600" y="90" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#475569">A mature harness converts execution into evidence, and evidence into engineering decisions.</text>
+
+  <circle cx="600" cy="398" r="218" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2" />
+  <circle cx="600" cy="398" r="96" fill="#0f172a" />
+  <text x="600" y="384" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#ffffff">Harness</text>
+  <text x="600" y="416" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#cbd5e1">control · observe · decide</text>
+
+  <g filter="url(#shadow)">
+    <rect x="502" y="132" width="196" height="76" rx="16" fill="#0891b2" />
+    <text x="600" y="164" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Requirement</text>
+    <text x="600" y="188" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#cffafe">what must be true</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="802" y="236" width="196" height="76" rx="16" fill="#4f46e5" />
+    <text x="900" y="268" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Scenario</text>
+    <text x="900" y="292" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#e0e7ff">how to exercise it</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="802" y="484" width="196" height="76" rx="16" fill="#9333ea" />
+    <text x="900" y="516" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Execution</text>
+    <text x="900" y="540" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#f3e8ff">run in controlled env</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="502" y="588" width="196" height="76" rx="16" fill="#ea580c" />
+    <text x="600" y="620" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Telemetry</text>
+    <text x="600" y="644" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#ffedd5">metrics · logs · traces</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="202" y="484" width="196" height="76" rx="16" fill="#dc2626" />
+    <text x="300" y="516" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Analysis</text>
+    <text x="300" y="540" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#fee2e2">compare · explain · score</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="202" y="236" width="196" height="76" rx="16" fill="#16a34a" />
+    <text x="300" y="268" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Decision</text>
+    <text x="300" y="292" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#dcfce7">release · rollback · refine</text>
+  </g>
+
+  <path d="M698 170 C778 180 842 202 884 234" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M900 312 C930 364 930 432 900 480" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M884 560 C826 606 752 626 702 626" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M498 626 C418 616 356 594 314 562" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M300 484 C270 432 270 364 300 316" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M316 234 C374 188 448 170 498 170" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+
+  <text x="600" y="724" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Generated for Terrence Shen · Evidence accumulates only when every run is reproducible and attributable.</text>
+</svg>
