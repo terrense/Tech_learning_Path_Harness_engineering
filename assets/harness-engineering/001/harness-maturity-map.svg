@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Harness Engineering Maturity Map</title>
+  <desc id="desc">A maturity map showing stages from manual execution to self-improving harness operations.</desc>
+  <defs>
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#111827" flood-opacity="0.13" />
+    </filter>
+  </defs>
+  <rect width="1200" height="760" fill="#f9fafb" />
+  <text x="600" y="56" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Harness Engineering Maturity Map</text>
+  <text x="600" y="88" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#4b5563">A staged path from manual verification toward evidence-driven operations.</text>
+
+  <g transform="translate(110,138)" filter="url(#shadow)">
+    <rect width="980" height="478" rx="18" fill="#ffffff" stroke="#e5e7eb" />
+    <line x1="160" y1="0" x2="160" y2="478" stroke="#e5e7eb" stroke-width="2" />
+    <line x1="0" y1="80" x2="980" y2="80" stroke="#e5e7eb" stroke-width="2" />
+    <line x1="0" y1="146" x2="980" y2="146" stroke="#e5e7eb" />
+    <line x1="0" y1="212" x2="980" y2="212" stroke="#e5e7eb" />
+    <line x1="0" y1="278" x2="980" y2="278" stroke="#e5e7eb" />
+    <line x1="0" y1="344" x2="980" y2="344" stroke="#e5e7eb" />
+    <line x1="0" y1="410" x2="980" y2="410" stroke="#e5e7eb" />
+
+    <text x="80" y="48" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Level</text>
+    <text x="275" y="48" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Operating Mode</text>
+    <text x="505" y="48" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Evidence Quality</text>
+    <text x="735" y="48" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Engineering Risk</text>
+    <text x="900" y="48" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Next Step</text>
+
+    <rect x="20" y="98" width="120" height="30" rx="15" fill="#6b7280" /><text x="80" y="119" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">L0</text>
+    <text x="275" y="118" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">Manual checks</text>
+    <text x="505" y="118" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">anecdotal</text>
+    <text x="735" y="118" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#991b1b">high</text>
+    <text x="900" y="118" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">script runs</text>
+
+    <rect x="20" y="164" width="120" height="30" rx="15" fill="#0891b2" /><text x="80" y="185" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">L1</text>
+    <text x="275" y="184" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">Repeatable scripts</text>
+    <text x="505" y="184" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">partial logs</text>
+    <text x="735" y="184" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#b45309">medium-high</text>
+    <text x="900" y="184" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">CI integration</text>
+
+    <rect x="20" y="230" width="120" height="30" rx="15" fill="#2563eb" /><text x="80" y="251" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">L2</text>
+    <text x="275" y="250" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">CI-gated harness</text>
+    <text x="505" y="250" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">structured reports</text>
+    <text x="735" y="250" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#92400e">medium</text>
+    <text x="900" y="250" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">observability</text>
+
+    <rect x="20" y="296" width="120" height="30" rx="15" fill="#7c3aed" /><text x="80" y="317" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">L3</text>
+    <text x="275" y="316" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">Observable harness</text>
+    <text x="505" y="316" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">metrics · traces</text>
+    <text x="735" y="316" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#4d7c0f">medium-low</text>
+    <text x="900" y="316" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">policy gates</text>
+
+    <rect x="20" y="362" width="120" height="30" rx="15" fill="#16a34a" /><text x="80" y="383" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">L4</text>
+    <text x="275" y="382" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">Policy-governed</text>
+    <text x="505" y="382" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">auditable evidence</text>
+    <text x="735" y="382" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#166534">low</text>
+    <text x="900" y="382" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">learning loop</text>
+
+    <rect x="20" y="428" width="120" height="30" rx="15" fill="#be123c" /><text x="80" y="449" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">L5</text>
+    <text x="275" y="448" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">Self-improving</text>
+    <text x="505" y="448" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">continuous evidence</text>
+    <text x="735" y="448" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#166534">bounded</text>
+    <text x="900" y="448" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#374151">govern change</text>
+  </g>
+
+  <text x="600" y="676" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#111827">Maturity is not automation alone; it is the quality of evidence available for decisions.</text>
+  <text x="600" y="714" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#6b7280">Generated for Terrence Shen · Tech Learning Path: Harness Engineering</text>
+</svg>
