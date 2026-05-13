@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Harness Engineering Layered Architecture</title>
+  <desc id="desc">A layered architecture diagram showing governance, orchestration, scenario specification, adapters, system under test, and evidence pipelines.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#1f2937" />
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#111827" flood-opacity="0.14" />
+    </filter>
+  </defs>
+  <rect width="1200" height="760" fill="#f8fafc" />
+  <text x="600" y="56" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Harness Engineering Layered Architecture</text>
+  <text x="600" y="88" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#4b5563">A harness surrounds the target system with reproducible control, evidence, and governance.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="126" width="960" height="76" rx="12" fill="#0f766e" />
+    <text x="600" y="158" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">Governance And Policy Layer</text>
+    <text x="600" y="184" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#ccfbf1">risk limits · privacy rules · release gates · audit trail · ownership</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="230" width="960" height="76" rx="12" fill="#2563eb" />
+    <text x="600" y="262" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">Orchestration Layer</text>
+    <text x="600" y="288" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#dbeafe">scheduler · environment provisioning · run lifecycle · retry strategy · parallelization</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="334" width="960" height="76" rx="12" fill="#7c3aed" />
+    <text x="600" y="366" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">Scenario Specification Layer</text>
+    <text x="600" y="392" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#ede9fe">inputs · expected contracts · data fixtures · assertions · workload profiles</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="438" width="960" height="90" rx="12" fill="#d97706" />
+    <text x="600" y="472" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">Adapter And Instrumentation Layer</text>
+    <text x="600" y="500" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#ffedd5">API adapters · protocol shims · mocks · probes · structured logging · tracing</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="150" y="566" width="410" height="104" rx="14" fill="#111827" />
+    <text x="355" y="606" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">System Under Test</text>
+    <text x="355" y="636" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#d1d5db">service · model · device · workflow · distributed platform</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="640" y="566" width="410" height="104" rx="14" fill="#be123c" />
+    <text x="845" y="606" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Evidence Pipeline</text>
+    <text x="845" y="636" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#ffe4e6">metrics · traces · artifacts · test reports · decision records</text>
+  </g>
+
+  <path d="M600 202 L600 226" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)" />
+  <path d="M600 306 L600 330" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)" />
+  <path d="M600 410 L600 434" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)" />
+  <path d="M440 528 C440 546 392 546 392 562" stroke="#1f2937" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M760 528 C760 546 808 546 808 562" stroke="#1f2937" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M560 618 L636 618" stroke="#1f2937" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+
+  <text x="600" y="722" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#6b7280">Generated for Terrence Shen · Tech Learning Path: Harness Engineering</text>
+</svg>
