@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">AI Agent Harness Runtime Layers</title>
+  <desc id="desc">Layered runtime diagram for AI agent harness engineering, showing model, prompts, context, tools, memory, permissions, observability, evals, and human gates.</desc>
+  <defs>
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#111827" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  <rect width="1280" height="820" fill="#ffffff" />
+  <text x="640" y="58" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">AI Agent Harness Runtime Layers</text>
+  <text x="640" y="92" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#4b5563">Harness engineering designs the environment in which an agent plans, acts, observes, verifies, and escalates.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="500" y="130" width="280" height="86" rx="18" fill="#111827" />
+    <text x="640" y="166" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Foundation Model</text>
+    <text x="640" y="193" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#d1d5db">reasoning · language · tool-call generation</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="380" y="250" width="520" height="86" rx="18" fill="#0f766e" />
+    <text x="640" y="286" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Prompt And Role Contract</text>
+    <text x="640" y="313" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#ccfbf1">mission · constraints · response format · operating style</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="265" y="370" width="750" height="86" rx="18" fill="#2563eb" />
+    <text x="640" y="406" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Context Assembly Layer</text>
+    <text x="640" y="433" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#dbeafe">task state · files · retrieval · memory · summaries · user preferences</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="150" y="490" width="980" height="86" rx="18" fill="#7c3aed" />
+    <text x="640" y="526" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Action And Tool Runtime</text>
+    <text x="640" y="553" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#ede9fe">tool registry · permissions · sandbox · retries · side effects · state transitions</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="80" y="610" width="1120" height="86" rx="18" fill="#be123c" />
+    <text x="640" y="646" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Verification, Observability, And Human Gates</text>
+    <text x="640" y="673" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#ffe4e6">evals · traces · logs · budgets · confidence checks · approval · escalation</text>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#374151">
+    <text x="110" y="750">A model becomes an agent only when it is placed inside a runtime that can manage tools, state, evidence, and risk.</text>
+  </g>
+
+  <text x="640" y="790" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Generated for Terrence Shen · Agent harness engineering is runtime architecture, not only prompt wording.</text>
+</svg>
