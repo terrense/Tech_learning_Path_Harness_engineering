@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Evaluation Feedback Loop</title>
+  <desc id="desc">Feedback loop for evaluating AI agents using scenario sets, trajectory traces, metrics, human review, regression gates, and harness updates.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M2,2 L10,6 L2,10 Z" fill="#334155" /></marker><filter id="shadow" x="-8%" y="-8%" width="116%" height="116%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#111827" flood-opacity="0.14" /></filter></defs>
+  <rect width="1280" height="820" fill="#f8fafc" />
+  <text x="640" y="58" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Agent Evaluation Feedback Loop</text>
+  <text x="640" y="92" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#475569">Agent quality improves when traces, evals, human review, and runtime changes form a closed loop.</text>
+  <circle cx="640" cy="420" r="220" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2" />
+  <circle cx="640" cy="420" r="90" fill="#111827" />
+  <text x="640" y="410" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff">Agent Harness</text>
+  <text x="640" y="440" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#d1d5db">runtime + evidence</text>
+  <g filter="url(#shadow)"><rect x="520" y="140" width="240" height="78" rx="16" fill="#0f766e" /><text x="640" y="172" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">Scenario Set</text><text x="640" y="196" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#ccfbf1">tasks · rubrics · risks</text></g>
+  <g filter="url(#shadow)"><rect x="850" y="250" width="240" height="78" rx="16" fill="#2563eb" /><text x="970" y="282" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">Trajectory Trace</text><text x="970" y="306" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#dbeafe">steps · tools · artifacts</text></g>
+  <g filter="url(#shadow)"><rect x="850" y="510" width="240" height="78" rx="16" fill="#7c3aed" /><text x="970" y="542" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">Evaluators</text><text x="970" y="566" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#ede9fe">task · tool · policy</text></g>
+  <g filter="url(#shadow)"><rect x="520" y="630" width="240" height="78" rx="16" fill="#ea580c" /><text x="640" y="662" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">Human Review</text><text x="640" y="686" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#ffedd5">rubric · diagnosis</text></g>
+  <g filter="url(#shadow)"><rect x="190" y="510" width="240" height="78" rx="16" fill="#be123c" /><text x="310" y="542" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">Regression Gate</text><text x="310" y="566" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#ffe4e6">pass · fail · review</text></g>
+  <g filter="url(#shadow)"><rect x="190" y="250" width="240" height="78" rx="16" fill="#16a34a" /><text x="310" y="282" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">Harness Update</text><text x="310" y="306" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#dcfce7">prompt · context · tools</text></g>
+  <path d="M640 218 L640 326" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <path d="M730 370 C805 330 880 310 918 300" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M970 328 C995 390 995 465 970 506" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M910 588 C830 640 760 666 764 666" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M520 666 C430 640 360 600 338 588" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M310 510 C285 430 285 360 310 332" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M430 289 C510 260 570 248 620 222" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <text x="640" y="785" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Generated for Terrence Shen · Agent evaluation is trajectory evaluation, not only final-answer grading.</text>
+</svg>
