@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">From Prompt Engineering To Context Engineering To Harness Engineering</title>
+  <desc id="desc">A diagram showing the evolution from prompt wording, to context assembly, to full agent runtime harness engineering.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#1f2937" />
+    </marker>
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#111827" flood-opacity="0.14" />
+    </filter>
+  </defs>
+  <rect width="1280" height="820" fill="#f8fafc" />
+  <text x="640" y="58" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">From Prompt Engineering To Harness Engineering</text>
+  <text x="640" y="92" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#475569">As agents become longer-running and tool-using, the engineering object moves outward from text to runtime systems.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="170" width="320" height="430" rx="18" fill="#0f766e" />
+    <text x="250" y="220" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#ffffff">Prompt Engineering</text>
+    <text x="250" y="258" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#ccfbf1">How to instruct one model call</text>
+    <line x1="130" y1="290" x2="370" y2="290" stroke="#ccfbf1" stroke-width="1" />
+    <text x="130" y="335" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#ffffff">Primary object:</text>
+    <text x="130" y="365" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#ccfbf1">instruction wording</text>
+    <text x="130" y="420" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#ffffff">Typical tools:</text>
+    <text x="130" y="450" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#ccfbf1">system prompt · examples · format</text>
+    <text x="130" y="505" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#ffffff">Limit:</text>
+    <text x="130" y="535" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#ccfbf1">does not control runtime behavior</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="480" y="170" width="320" height="430" rx="18" fill="#2563eb" />
+    <text x="640" y="220" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#ffffff">Context Engineering</text>
+    <text x="640" y="258" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#dbeafe">What the model sees and when</text>
+    <line x1="520" y1="290" x2="760" y2="290" stroke="#dbeafe" stroke-width="1" />
+    <text x="520" y="335" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#ffffff">Primary object:</text>
+    <text x="520" y="365" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#dbeafe">retrieval and context assembly</text>
+    <text x="520" y="420" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#ffffff">Typical tools:</text>
+    <text x="520" y="450" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#dbeafe">RAG · files · memory · summaries</text>
+    <text x="520" y="505" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#ffffff">Limit:</text>
+    <text x="520" y="535" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#dbeafe">does not by itself enforce action</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="870" y="170" width="320" height="430" rx="18" fill="#7c3aed" />
+    <text x="1030" y="220" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#ffffff">Harness Engineering</text>
+    <text x="1030" y="258" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#ede9fe">How the agent runs over time</text>
+    <line x1="910" y1="290" x2="1150" y2="290" stroke="#ede9fe" stroke-width="1" />
+    <text x="910" y="335" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#ffffff">Primary object:</text>
+    <text x="910" y="365" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#ede9fe">runtime loop and control system</text>
+    <text x="910" y="420" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#ffffff">Typical tools:</text>
+    <text x="910" y="450" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#ede9fe">tools · permissions · sandbox</text>
+    <text x="910" y="480" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#ede9fe">session · evals · feedback loops</text>
+    <text x="910" y="535" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#ffffff">Goal:</text>
+    <text x="910" y="565" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#ede9fe">reliable autonomous work</text>
+  </g>
+
+  <path d="M410 385 L476 385" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)" />
+  <path d="M800 385 L866 385" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)" />
+
+  <rect x="260" y="660" width="760" height="70" rx="14" fill="#111827" />
+  <text x="640" y="690" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Prompt and context are still necessary, but they become inner layers of the agent harness.</text>
+  <text x="640" y="716" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#d1d5db">Generated for Terrence Shen · Tech Learning Path: Harness Engineering</text>
+</svg>
