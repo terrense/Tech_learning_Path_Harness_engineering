@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">Python Evaluation Harness Workflow</title>
+  <desc id="desc">Workflow diagram for a Python evaluation harness, from scenario loading to adapter invocation, evaluator scoring, artifact storage, and policy decision.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#263238" />
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.16" />
+    </filter>
+  </defs>
+  <rect width="1280" height="820" fill="#f8fafc" />
+  <text x="640" y="58" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="36" font-weight="700" fill="#111827">Python Evaluation Harness Workflow</text>
+  <text x="640" y="92" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#475569">A practical harness transforms scenario definitions into reproducible evidence and policy decisions.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="160" width="220" height="92" rx="14" fill="#0f766e" />
+    <text x="180" y="196" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Scenario Loader</text>
+    <text x="180" y="225" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#ccfbf1">YAML · JSON · fixtures</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="380" y="160" width="220" height="92" rx="14" fill="#2563eb" />
+    <text x="490" y="196" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Runner</text>
+    <text x="490" y="225" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#dbeafe">timeout · retry · run id</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="690" y="160" width="220" height="92" rx="14" fill="#7c3aed" />
+    <text x="800" y="196" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Adapter</text>
+    <text x="800" y="225" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#ede9fe">HTTP · CLI · model API</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1000" y="160" width="220" height="92" rx="14" fill="#111827" />
+    <text x="1110" y="196" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Target System</text>
+    <text x="1110" y="225" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#e5e7eb">service · model · workflow</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="225" y="420" width="230" height="96" rx="14" fill="#ea580c" />
+    <text x="340" y="458" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Evaluator</text>
+    <text x="340" y="488" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#ffedd5">assertions · metrics · score</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="525" y="420" width="230" height="96" rx="14" fill="#be123c" />
+    <text x="640" y="458" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Artifact Store</text>
+    <text x="640" y="488" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#ffe4e6">request · response · metrics</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="825" y="420" width="230" height="96" rx="14" fill="#16a34a" />
+    <text x="940" y="458" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Policy Gate</text>
+    <text x="940" y="488" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#dcfce7">pass · fail · review</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="170" y="642" width="940" height="80" rx="14" fill="#334155" />
+    <text x="640" y="674" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Evidence Bundle</text>
+    <text x="640" y="704" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#e2e8f0">run.json · scenario.json · environment.json · evaluation.json · decision.md</text>
+  </g>
+
+  <path d="M290 206 L376 206" stroke="#263238" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M600 206 L686 206" stroke="#263238" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M910 206 L996 206" stroke="#263238" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M1110 252 C1110 332 910 360 802 398 C715 429 610 434 458 454" stroke="#263238" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M455 468 L521 468" stroke="#263238" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M755 468 L821 468" stroke="#263238" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M940 516 C930 590 824 620 718 636" stroke="#263238" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M640 516 L640 638" stroke="#263238" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+
+  <text x="640" y="780" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Generated for Terrence Shen · A practical harness is a reproducible evidence machine.</text>
+</svg>
