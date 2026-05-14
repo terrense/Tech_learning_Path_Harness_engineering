@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">Python Harness Evidence Model</title>
+  <desc id="desc">A diagram showing how evidence artifacts are organized around run identity, scenario identity, environment metadata, target output, metrics, and policy decision.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.14" />
+    </filter>
+  </defs>
+  <rect width="1280" height="820" fill="#f9fafb" />
+  <text x="640" y="58" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="36" font-weight="700" fill="#111827">Evidence Model For A Python Harness</text>
+  <text x="640" y="92" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#4b5563">Every run should leave enough evidence to reproduce, explain, compare, and audit the result.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="460" y="155" width="360" height="120" rx="18" fill="#111827" />
+    <text x="640" y="202" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">run.json</text>
+    <text x="640" y="234" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#d1d5db">run_id · commit_sha · started_at · status</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="100" y="360" width="300" height="110" rx="16" fill="#0f766e" />
+    <text x="250" y="402" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">scenario.json</text>
+    <text x="250" y="432" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#ccfbf1">input · expected · owner</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="490" y="360" width="300" height="110" rx="16" fill="#2563eb" />
+    <text x="640" y="402" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">environment.json</text>
+    <text x="640" y="432" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#dbeafe">python · image · config_hash</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="880" y="360" width="300" height="110" rx="16" fill="#7c3aed" />
+    <text x="1030" y="402" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">response.json</text>
+    <text x="1030" y="432" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#ede9fe">status · body · latency</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="260" y="590" width="300" height="110" rx="16" fill="#ea580c" />
+    <text x="410" y="632" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">evaluation.json</text>
+    <text x="410" y="662" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#ffedd5">metrics · reasons · score</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="720" y="590" width="300" height="110" rx="16" fill="#16a34a" />
+    <text x="870" y="632" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">decision.md</text>
+    <text x="870" y="662" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#dcfce7">pass · fail · review · owner</text>
+  </g>
+
+  <path d="M570 275 L300 356" stroke="#334155" stroke-width="3" fill="none" />
+  <path d="M640 275 L640 356" stroke="#334155" stroke-width="3" fill="none" />
+  <path d="M710 275 L980 356" stroke="#334155" stroke-width="3" fill="none" />
+  <path d="M350 470 L410 586" stroke="#334155" stroke-width="3" fill="none" />
+  <path d="M640 470 L520 586" stroke="#334155" stroke-width="3" fill="none" />
+  <path d="M1030 470 L870 586" stroke="#334155" stroke-width="3" fill="none" />
+  <path d="M560 645 L716 645" stroke="#334155" stroke-width="3" fill="none" />
+
+  <text x="640" y="770" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Generated for Terrence Shen · Evidence is useful only when it can survive time, team changes, and future audits.</text>
+</svg>
