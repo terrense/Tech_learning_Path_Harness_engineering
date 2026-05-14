@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">AI Agent Harness Control Loop</title>
+  <desc id="desc">A control loop diagram for AI agent harness engineering, from intent to context, model step, tool execution, observation, verification, memory update, and human escalation.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#334155" />
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  <rect width="1280" height="820" fill="#f9fafb" />
+  <text x="640" y="58" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">AI Agent Harness Control Loop</text>
+  <text x="640" y="92" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#475569">The harness owns the loop around the model: assemble, act, observe, verify, persist, and escalate.</text>
+
+  <circle cx="640" cy="420" r="150" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2" />
+  <circle cx="640" cy="420" r="82" fill="#111827" />
+  <text x="640" y="410" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">Model Step</text>
+  <text x="640" y="440" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#d1d5db">reason · choose · speak</text>
+
+  <g filter="url(#shadow)">
+    <rect x="530" y="140" width="220" height="78" rx="16" fill="#0f766e" />
+    <text x="640" y="172" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Intent</text>
+    <text x="640" y="196" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#ccfbf1">task · goal · constraints</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="815" y="240" width="240" height="78" rx="16" fill="#2563eb" />
+    <text x="935" y="272" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Context Builder</text>
+    <text x="935" y="296" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#dbeafe">state · memory · retrieval</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="850" y="520" width="240" height="78" rx="16" fill="#7c3aed" />
+    <text x="970" y="552" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Tool Runtime</text>
+    <text x="970" y="576" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#ede9fe">execute · sandbox · record</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="520" y="635" width="240" height="78" rx="16" fill="#ea580c" />
+    <text x="640" y="667" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Observation</text>
+    <text x="640" y="691" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#ffedd5">result · error · artifact</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="190" y="520" width="240" height="78" rx="16" fill="#be123c" />
+    <text x="310" y="552" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Verification</text>
+    <text x="310" y="576" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#ffe4e6">eval · policy · budget</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="225" y="240" width="240" height="78" rx="16" fill="#16a34a" />
+    <text x="345" y="272" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">State Update</text>
+    <text x="345" y="296" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#dcfce7">memory · plan · trace</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="490" y="735" width="300" height="50" rx="14" fill="#334155" />
+    <text x="640" y="766" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Human Escalation When Risk Exceeds Authority</text>
+  </g>
+
+  <path d="M680 218 C750 230 810 250 850 270" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M935 318 C910 375 835 408 726 420" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M705 470 C790 510 858 535 914 552" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M930 598 C855 648 774 674 764 674" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M520 674 C430 650 374 610 330 598" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M310 520 C310 450 325 375 345 322" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M465 279 C550 275 600 300 625 338" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M640 713 L640 731" stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+
+  <text x="640" y="805" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Generated for Terrence Shen · The harness turns model intelligence into controlled agent behavior.</text>
+</svg>
