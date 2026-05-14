@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">Python Harness Repository Structure</title>
+  <desc id="desc">A diagram showing recommended directories for a Python evaluation harness repository.</desc>
+  <defs>
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#111827" flood-opacity="0.13" />
+    </filter>
+  </defs>
+  <rect width="1280" height="820" fill="#ffffff" />
+  <text x="640" y="58" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="36" font-weight="700" fill="#111827">Python Harness Repository Structure</text>
+  <text x="640" y="92" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#4b5563">A maintainable harness separates execution, target adapters, evaluation logic, policies, scenarios, and artifacts.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="135" width="1100" height="610" rx="18" fill="#f8fafc" stroke="#e5e7eb" />
+  </g>
+
+  <g font-family="Consolas, Menlo, monospace" font-size="20" fill="#111827">
+    <text x="140" y="190" font-weight="700">evaluation-harness/</text>
+    <text x="180" y="230">├── pyproject.toml</text>
+    <text x="180" y="268">├── README.md</text>
+    <text x="180" y="306">├── harness/</text>
+    <text x="220" y="344">│   ├── runner.py</text>
+    <text x="220" y="382">│   ├── scenario.py</text>
+    <text x="220" y="420">│   ├── artifacts.py</text>
+    <text x="220" y="458">│   ├── adapters/</text>
+    <text x="260" y="496">│   │   ├── http.py</text>
+    <text x="260" y="534">│   │   └── cli.py</text>
+    <text x="220" y="572">│   ├── evaluators/</text>
+    <text x="260" y="610">│   │   ├── json_contract.py</text>
+    <text x="260" y="648">│   │   └── latency.py</text>
+    <text x="220" y="686">│   └── policies.py</text>
+  </g>
+
+  <g font-family="Consolas, Menlo, monospace" font-size="20" fill="#111827">
+    <text x="710" y="230">├── scenarios/</text>
+    <text x="750" y="268">│   ├── smoke/</text>
+    <text x="750" y="306">│   ├── regression/</text>
+    <text x="750" y="344">│   └── resilience/</text>
+    <text x="710" y="382">├── policies/</text>
+    <text x="750" y="420">│   ├── pull_request.yml</text>
+    <text x="750" y="458">│   └── release.yml</text>
+    <text x="710" y="496">├── tests/</text>
+    <text x="750" y="534">│   ├── test_evaluators.py</text>
+    <text x="750" y="572">│   └── test_runner.py</text>
+    <text x="710" y="610">└── artifacts/</text>
+    <text x="750" y="648">    └── .gitkeep</text>
+  </g>
+
+  <g>
+    <rect x="128" y="164" width="250" height="36" rx="18" fill="#0f766e" />
+    <text x="253" y="188" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">package boundary</text>
+    <rect x="700" y="164" width="250" height="36" rx="18" fill="#2563eb" />
+    <text x="825" y="188" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">operating boundary</text>
+  </g>
+
+  <text x="640" y="785" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Generated for Terrence Shen · Structure is a quality control mechanism.</text>
+</svg>
