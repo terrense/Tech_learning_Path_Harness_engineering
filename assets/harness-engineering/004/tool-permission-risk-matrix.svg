@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Tool Permission Risk Matrix</title>
+  <desc id="desc">A matrix classifying agent tools by side effect and approval requirement.</desc>
+  <defs><filter id="shadow" x="-8%" y="-8%" width="116%" height="116%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#111827" flood-opacity="0.14" /></filter></defs>
+  <rect width="1280" height="820" fill="#f8fafc" />
+  <text x="640" y="58" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Tool Permission Risk Matrix</text>
+  <text x="640" y="92" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#475569">An agent harness should classify tools by reversibility, data exposure, external side effects, and business risk.</text>
+  <g transform="translate(110,145)" filter="url(#shadow)">
+    <rect width="1060" height="560" rx="18" fill="#ffffff" stroke="#e5e7eb" />
+    <line x1="250" y1="0" x2="250" y2="560" stroke="#e5e7eb" stroke-width="2" />
+    <line x1="520" y1="0" x2="520" y2="560" stroke="#e5e7eb" stroke-width="2" />
+    <line x1="790" y1="0" x2="790" y2="560" stroke="#e5e7eb" stroke-width="2" />
+    <line x1="0" y1="110" x2="1060" y2="110" stroke="#e5e7eb" stroke-width="2" />
+    <line x1="0" y1="260" x2="1060" y2="260" stroke="#e5e7eb" stroke-width="2" />
+    <line x1="0" y1="410" x2="1060" y2="410" stroke="#e5e7eb" stroke-width="2" />
+    <text x="125" y="62" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Risk Tier</text>
+    <text x="385" y="62" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Example Tools</text>
+    <text x="655" y="62" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Harness Policy</text>
+    <text x="925" y="62" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Evidence</text>
+    <rect x="42" y="155" width="165" height="52" rx="26" fill="#0f766e" /><text x="125" y="188" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#fff">Low</text>
+    <text x="385" y="172" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">read file · search docs</text><text x="385" y="202" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">inspect status</text>
+    <text x="655" y="184" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">allow automatically</text>
+    <text x="925" y="184" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">trace only</text>
+    <rect x="42" y="305" width="165" height="52" rx="26" fill="#2563eb" /><text x="125" y="338" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#fff">Medium</text>
+    <text x="385" y="322" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">edit file · run tests</text><text x="385" y="352" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">create branch</text>
+    <text x="655" y="334" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">allow in sandbox</text>
+    <text x="925" y="334" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">diff + command log</text>
+    <rect x="42" y="455" width="165" height="52" rx="26" fill="#be123c" /><text x="125" y="488" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#fff">High</text>
+    <text x="385" y="472" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">delete · deploy · email</text><text x="385" y="502" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">payment · external publish</text>
+    <text x="655" y="484" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">require approval</text>
+    <text x="925" y="484" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#374151">decision record</text>
+  </g>
+  <text x="640" y="770" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Generated for Terrence Shen · Tools are capabilities; permissions are engineering controls.</text>
+</svg>
