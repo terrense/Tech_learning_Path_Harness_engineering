@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Harness Observability Stack</title>
+  <desc id="desc">Stack diagram for observing agent runtime behavior through model events, tool events, traces, metrics, artifacts, decisions, dashboards, and alerts.</desc>
+  <defs><filter id="shadow" x="-8%" y="-8%" width="116%" height="116%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#111827" flood-opacity="0.14" /></filter></defs>
+  <rect width="1280" height="820" fill="#ffffff" />
+  <text x="640" y="58" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Agent Observability Stack</text>
+  <text x="640" y="92" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#4b5563">A production agent harness must explain what the agent saw, decided, did, observed, and why it stopped.</text>
+  <g filter="url(#shadow)">
+    <rect x="190" y="140" width="900" height="72" rx="14" fill="#111827" /><text x="640" y="184" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff">Dashboards, Alerts, And Review Queues</text>
+    <rect x="190" y="245" width="900" height="72" rx="14" fill="#be123c" /><text x="640" y="289" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff">Decision Records And Policy Outcomes</text>
+    <rect x="190" y="350" width="900" height="72" rx="14" fill="#7c3aed" /><text x="640" y="394" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff">Artifacts: Prompts, Context Bundles, Diffs, Files, Screenshots</text>
+    <rect x="190" y="455" width="900" height="72" rx="14" fill="#2563eb" /><text x="640" y="499" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff">Traces And Metrics: Step Latency, Cost, Tool Error, Retry</text>
+    <rect x="190" y="560" width="900" height="72" rx="14" fill="#0f766e" /><text x="640" y="604" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff">Structured Events: Model, Tool, Context, Permission, Eval</text>
+  </g>
+  <text x="640" y="705" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">The stack should preserve both machine-readable telemetry and human-readable explanations.</text>
+  <text x="640" y="785" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Generated for Terrence Shen · Observability is how a team earns the right to trust agent autonomy.</text>
+</svg>
