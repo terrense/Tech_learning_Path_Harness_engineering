@@ -20,6 +20,18 @@ summary: '本文系统化定义 Harness Engineering，将其视为围绕目标�
 
 ![Harness layered architecture](../../assets/harness-engineering/001/harness-layered-architecture.svg)
 
+## 🧷 目录
+
+- [🧭 摘要：为什么需要 Harness Engineering](#-摘要为什么需要-harness-engineering)
+- [🧱 概念定义：Harness 到底是什么](#-概念定义harness-到底是什么)
+- [🗺️ 总体架构：围绕目标系统建立工程边界](#️-总体架构围绕目标系统建立工程边界)
+- [🧪 最小可用 Harness：从一个简单 Runner 开始](#-最小可用-harness从一个简单-runner-开始)
+- [🧾 Scenario Specification：把测试用例升级为场景契约](#-scenario-specification把测试用例升级为场景契约)
+- [📊 证据循环：从运行结果到工程决策](#-证据循环从运行结果到工程决策)
+- [🧬 Harness Engineering 与 AI 系统](#-harness-engineering-与-ai-系统)
+- [🧮 成熟度模型：从手工验证到证据驱动运维](#-成熟度模型从手工验证到证据驱动运维)
+- [🏁 结论：Harness Engineering 的本质是证据工程](#-结论harness-engineering-的本质是证据工程)
+
 ## 🧭 摘要：为什么需要 Harness Engineering
 
 复杂系统的质量问题通常并不只来自单个函数、单个接口或单个模型。真实生产环境中的失败往往产生于多个因素的耦合：输入分布变化、依赖服务抖动、配置漂移、环境差异、资源争用、模型版本变化、异步任务积压、观测数据缺失，以及团队对系统边界理解不一致。
@@ -100,7 +112,6 @@ import subprocess
 import time
 from dataclasses import dataclass, asdict
 from pathlib import Path
-from typing import Any
 
 
 @dataclass
@@ -856,8 +867,8 @@ def test_character_error_rate_exact_match():
     assert character_error_rate('工程系统', '工程系统') == 0.0
 
 
-def test_character_error_rate_single_substitution():
-    assert character_error_rate('工程系统', '工程体系') == 0.25
+def test_character_error_rate_two_substitutions():
+    assert character_error_rate('工程系统', '工程体系') == 0.5
 
 
 def test_environment_metadata_contains_config_hash(tmp_path: Path):
