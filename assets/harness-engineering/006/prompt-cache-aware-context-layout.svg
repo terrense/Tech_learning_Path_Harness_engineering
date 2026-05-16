@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt Cache Aware Context Layout</title>
+  <desc id="desc">A layout that puts stable agent contract and tool schema at the prefix, with dynamic goal, memory, retrieval, and observations later.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f9fafb}.stable{fill:#dbeafe;stroke:#1d4ed8;stroke-width:2}.dynamic{fill:#fef3c7;stroke:#b45309;stroke-width:2}.trace{fill:#dcfce7;stroke:#15803d;stroke-width:2}.txt{font-family:Arial,Helvetica,sans-serif;fill:#111827}.h{font-size:28px;font-weight:700}.m{font-size:18px;font-weight:700}.s{font-size:14px}.axis{stroke:#374151;stroke-width:4;marker-end:url(#arrow)}.tick{stroke:#64748b;stroke-width:2}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#374151"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="650"/>
+  <text class="txt h" x="60" y="58">Prompt-Cache-Aware Context Layout</text>
+  <text class="txt s" x="60" y="86">Stable prefix improves reuse; dynamic suffix carries per-task evidence and recent observations.</text>
+
+  <line class="axis" x1="95" y1="180" x2="1110" y2="180"/>
+  <text class="txt s" x="95" y="148">prompt prefix</text>
+  <text class="txt s" x="1015" y="148">prompt suffix</text>
+
+  <rect class="stable" x="105" y="230" width="190" height="100" rx="10"/>
+  <text class="txt m" x="130" y="266">System Contract</text>
+  <text class="txt s" x="130" y="294">role, rules, output</text>
+
+  <rect class="stable" x="315" y="230" width="190" height="100" rx="10"/>
+  <text class="txt m" x="340" y="266">Stable Tools</text>
+  <text class="txt s" x="340" y="294">schema v, risk tier</text>
+
+  <rect class="stable" x="525" y="230" width="170" height="100" rx="10"/>
+  <text class="txt m" x="550" y="266">Policy</text>
+  <text class="txt s" x="550" y="294">budget, safety</text>
+
+  <rect class="dynamic" x="715" y="230" width="150" height="100" rx="10"/>
+  <text class="txt m" x="740" y="266">Goal</text>
+  <text class="txt s" x="740" y="294">task-specific</text>
+
+  <rect class="dynamic" x="885" y="230" width="150" height="100" rx="10"/>
+  <text class="txt m" x="910" y="266">Evidence</text>
+  <text class="txt s" x="910" y="294">retrieval hits</text>
+
+  <rect class="dynamic" x="1055" y="230" width="90" height="100" rx="10"/>
+  <text class="txt m" x="1072" y="266">Obs</text>
+  <text class="txt s" x="1072" y="294">latest</text>
+
+  <line class="tick" x1="695" y1="215" x2="695" y2="355"/>
+  <text class="txt s" x="610" y="382">stable prefix boundary</text>
+
+  <rect class="trace" x="165" y="470" width="870" height="76" rx="12"/>
+  <text class="txt m" x="195" y="502">Layout invariant</text>
+  <text class="txt s" x="195" y="530">Put versioned stable contract first; put user-specific memory, retrieval evidence, and recent observations after the cache-sensitive prefix.</text>
+</svg>
