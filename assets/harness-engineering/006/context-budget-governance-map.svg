@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Context Budget Governance Map</title>
+  <desc id="desc">A governance map for allocating context budget among system contract, tools, session, memory, retrieval, and safety margin.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.ring{fill:none;stroke:#334155;stroke-width:24}.seg1{fill:#dbeafe}.seg2{fill:#ede9fe}.seg3{fill:#dcfce7}.seg4{fill:#fef3c7}.seg5{fill:#fee2e2}.seg6{fill:#e2e8f0}.card{fill:#ffffff;stroke:#334155;stroke-width:2}.txt{font-family:Arial,Helvetica,sans-serif;fill:#0f172a}.h{font-size:28px;font-weight:700}.m{font-size:18px;font-weight:700}.s{font-size:14px}.arrow{stroke:#475569;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#475569"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="720"/>
+  <text class="txt h" x="60" y="58">Context Budget Governance Map</text>
+  <text class="txt s" x="60" y="86">Token budget is governed as a multi-objective control problem: utility, risk, cost, latency, and auditability.</text>
+
+  <circle cx="560" cy="370" r="170" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <path class="seg1" d="M560 370 L560 200 A170 170 0 0 1 707 285 Z"/>
+  <path class="seg2" d="M560 370 L707 285 A170 170 0 0 1 706 456 Z"/>
+  <path class="seg3" d="M560 370 L706 456 A170 170 0 0 1 560 540 Z"/>
+  <path class="seg4" d="M560 370 L560 540 A170 170 0 0 1 413 455 Z"/>
+  <path class="seg5" d="M560 370 L413 455 A170 170 0 0 1 414 285 Z"/>
+  <path class="seg6" d="M560 370 L414 285 A170 170 0 0 1 560 200 Z"/>
+  <circle cx="560" cy="370" r="72" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <text class="txt m" x="511" y="360">24K</text>
+  <text class="txt s" x="503" y="386">context limit</text>
+
+  <rect class="card" x="70" y="160" width="260" height="74" rx="10"/>
+  <text class="txt m" x="96" y="190">System Contract</text>
+  <text class="txt s" x="96" y="214">stable, versioned, cacheable</text>
+
+  <rect class="card" x="70" y="275" width="260" height="74" rx="10"/>
+  <text class="txt m" x="96" y="305">Tool Schemas</text>
+  <text class="txt s" x="96" y="329">visible by phase and risk</text>
+
+  <rect class="card" x="70" y="390" width="260" height="74" rx="10"/>
+  <text class="txt m" x="96" y="420">Session State</text>
+  <text class="txt s" x="96" y="444">recent observations and plan</text>
+
+  <rect class="card" x="820" y="160" width="300" height="74" rx="10"/>
+  <text class="txt m" x="846" y="190">Selected Memory</text>
+  <text class="txt s" x="846" y="214">scored, decayed, referenced</text>
+
+  <rect class="card" x="820" y="275" width="300" height="74" rx="10"/>
+  <text class="txt m" x="846" y="305">Retrieval Evidence</text>
+  <text class="txt s" x="846" y="329">fresh, relevant, auditable</text>
+
+  <rect class="card" x="820" y="390" width="300" height="74" rx="10"/>
+  <text class="txt m" x="846" y="420">Safety Margin</text>
+  <text class="txt s" x="846" y="444">room for output and tool results</text>
+
+  <path class="arrow" d="M330 197 C395 215 420 260 455 294"/>
+  <path class="arrow" d="M330 312 C385 322 405 346 488 356"/>
+  <path class="arrow" d="M330 427 C392 425 420 403 488 390"/>
+  <path class="arrow" d="M820 197 C756 214 724 255 669 294"/>
+  <path class="arrow" d="M820 312 C760 318 730 346 632 356"/>
+  <path class="arrow" d="M820 427 C758 425 728 403 632 390"/>
+
+  <rect class="card" x="230" y="610" width="740" height="58" rx="12"/>
+  <text class="txt s" x="260" y="644">Governance rule: high-value, low-risk, fresh, source-linked blocks win budget before noisy or sensitive blocks.</text>
+</svg>
