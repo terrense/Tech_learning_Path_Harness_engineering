@@ -9,6 +9,7 @@ This series now uses the following structure:
 - Lessons 001-002 are the evaluation and evidence-engineering foundation. They explain the broader test/evaluation harness tradition and provide a Python evaluation harness baseline.
 - Lesson 003 is the conceptual correction and transition point. From there, the series focuses on AI Agent Harness Engineering: the runtime systems around autonomous, tool-using agents.
 - Lessons 004-005 move into agent runtime design, evaluation loops, observability, human gates, and autonomy governance.
+- Lesson 006 deepens the runtime discussion into context engineering: retrieval, memory selection, compaction, prompt-cache-aware layout, budget governance, and context evals inside an agent harness.
 
 ## Article Index
 
@@ -19,6 +20,7 @@ This series now uses the following structure:
 | 003 | [🧭 第三课：真正的 Agent Harness Engineering：从 Prompt、Context 到 Agent 运行时外骨骼](articles/harness-engineering/003-agent-harness-engineering-for-ai-agents.md) | Concept correction, prompt/context/harness evolution, agent runtime map |
 | 004 | [🛠️ 第四课：Agent Harness Runtime Design：工具、权限、沙箱、Session、Memory 与 Context Builder](articles/harness-engineering/004-agent-harness-runtime-design.md) | Tool registry, permission model, sandbox, session, memory, context builder |
 | 005 | [📈 第五课：Agent Harness 的验证闭环：Eval、Trajectory、Observability、Human Gate 与自治成熟度](articles/harness-engineering/005-agent-harness-evaluation-feedback-ops.md) | Agent eval, trajectory trace, observability, human gate, feedback loop, autonomy maturity |
+| 006 | [🧵 第六课：Context Engineering Inside Agent Harness：检索、记忆选择、压缩、预算与上下文治理](articles/harness-engineering/006-context-engineering-inside-agent-harness.md) | Context builder, retrieval, memory selection, compaction, context budget, prompt caching, context evals |
 
 ## Repository Structure
 
@@ -31,6 +33,7 @@ articles/
     003-agent-harness-engineering-for-ai-agents.md
     004-agent-harness-runtime-design.md
     005-agent-harness-evaluation-feedback-ops.md
+    006-context-engineering-inside-agent-harness.md
 assets/
   harness-engineering/
     001/
@@ -53,6 +56,11 @@ assets/
       agent-eval-feedback-loop.svg
       agent-observability-stack.svg
       agent-autonomy-maturity-model.svg
+    006/
+      context-builder-control-plane.svg
+      memory-retrieval-selection-pipeline.svg
+      context-budget-governance-map.svg
+      prompt-cache-aware-context-layout.svg
 templates/
   article-template.md
 ```
@@ -85,10 +93,10 @@ assets/harness-engineering/
 
 Potential next articles:
 
-- 🧵 Context Engineering Inside Agent Harness: retrieval, memory selection, summarization, and context budget control.
 - 🧰 Tool Use Architecture: tool schema, MCP, risk tiers, approval gates, and side-effect control.
 - 🧪 Agent Evals In Practice: trajectory datasets, deterministic stubs, rubric scoring, and regression dashboards.
 - 🚀 Production Agent Operations: monitoring, rollback, audit, incident response, and continuous improvement.
+- 🧬 Multi-Agent Harnesses: delegation, context isolation, coordination protocols, and cross-agent trace evaluation.
 
 ## Author Contact
 
