@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720" role="img" aria-labelledby="title desc">
+  <title id="title">Side Effect Control Loop</title>
+  <desc id="desc">A control loop for dry run, diff, approval, execution, observation, rollback, and learning around agent tool side effects.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.node{fill:#ffffff;stroke:#334155;stroke-width:2}.safe{fill:#dcfce7;stroke:#15803d;stroke-width:2}.warn{fill:#fef3c7;stroke:#b45309;stroke-width:2}.risk{fill:#fee2e2;stroke:#b91c1c;stroke-width:2}.text{font-family:Arial,Helvetica,sans-serif;fill:#0f172a}.title{font-size:28px;font-weight:700}.label{font-size:17px;font-weight:700}.small{font-size:13px}.arrow{stroke:#475569;stroke-width:2.4;fill:none;marker-end:url(#arrow)}.dash{stroke:#64748b;stroke-width:2;stroke-dasharray:7 6;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker>
+  </defs>
+  <rect class="bg" width="1180" height="720"/>
+  <text class="text title" x="52" y="56">Side-Effect Control Loop</text>
+  <text class="text small" x="54" y="84">Every side effect should pass through prediction, containment, evidence, and rollback-aware learning.</text>
+
+  <circle class="node" cx="200" cy="210" r="78"/>
+  <text class="text label" x="158" y="200">Propose</text>
+  <text class="text small" x="150" y="226">intent + args</text>
+
+  <circle class="safe" cx="430" cy="150" r="78"/>
+  <text class="text label" x="390" y="140">Dry Run</text>
+  <text class="text small" x="378" y="166">predict changes</text>
+
+  <circle class="warn" cx="660" cy="210" r="78"/>
+  <text class="text label" x="630" y="200">Diff</text>
+  <text class="text small" x="604" y="226">human-readable</text>
+
+  <circle class="warn" cx="810" cy="395" r="78"/>
+  <text class="text label" x="770" y="385">Approve</text>
+  <text class="text small" x="755" y="411">policy or human</text>
+
+  <circle class="risk" cx="590" cy="530" r="78"/>
+  <text class="text label" x="560" y="520">Execute</text>
+  <text class="text small" x="540" y="546">scoped runtime</text>
+
+  <circle class="node" cx="340" cy="470" r="78"/>
+  <text class="text label" x="306" y="460">Observe</text>
+  <text class="text small" x="286" y="486">trace + metrics</text>
+
+  <circle class="safe" cx="190" cy="340" r="68"/>
+  <text class="text label" x="162" y="334">Learn</text>
+  <text class="text small" x="142" y="358">policy update</text>
+
+  <path class="arrow" d="M275 190 C315 174 342 164 355 160"/>
+  <path class="arrow" d="M505 165 C548 176 574 184 588 190"/>
+  <path class="arrow" d="M710 272 C740 310 765 340 783 365"/>
+  <path class="arrow" d="M752 447 C710 480 678 502 658 514"/>
+  <path class="arrow" d="M514 514 C480 500 447 492 416 486"/>
+  <path class="arrow" d="M282 426 C245 398 223 376 211 365"/>
+  <path class="arrow" d="M183 272 C183 252 186 237 192 225"/>
+
+  <rect class="node" x="900" y="120" width="210" height="96" rx="12"/>
+  <text class="text label" x="940" y="155">Rollback Plan</text>
+  <text class="text small" x="930" y="182">inverse action or restore point</text>
+  <path class="dash" d="M870 365 C936 320 982 250 1005 216"/>
+  <path class="dash" d="M668 515 C770 560 930 530 1005 216"/>
+
+  <rect class="node" x="900" y="560" width="210" height="70" rx="12"/>
+  <text class="text label" x="938" y="594">Evidence Pack</text>
+  <text class="text small" x="932" y="616">before, after, reason, actor</text>
+  <path class="dash" d="M654 559 C740 605 820 610 900 600"/>
+</svg>
