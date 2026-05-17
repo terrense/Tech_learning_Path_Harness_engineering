@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720" role="img" aria-labelledby="title desc">
+  <title id="title">Permission Risk Gate Lattice</title>
+  <desc id="desc">A risk lattice mapping read, write, execute, network, and irreversible actions to approval and containment requirements.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.grid{stroke:#cbd5e1;stroke-width:1}.axis{stroke:#334155;stroke-width:2}.cell0{fill:#dcfce7}.cell1{fill:#e0f2fe}.cell2{fill:#fef3c7}.cell3{fill:#fed7aa}.cell4{fill:#fee2e2}.text{font-family:Arial,Helvetica,sans-serif;fill:#0f172a}.title{font-size:28px;font-weight:700}.label{font-size:17px;font-weight:700}.small{font-size:13px}.badge{fill:#ffffff;stroke:#334155;stroke-width:1.5}.arrow{stroke:#475569;stroke-width:2.2;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker>
+  </defs>
+  <rect class="bg" width="1180" height="720"/>
+  <text class="text title" x="52" y="56">Permission Risk Gate Lattice</text>
+  <text class="text small" x="54" y="84">Permission design should rank capability by reversible impact, data sensitivity, and blast radius.</text>
+
+  <g transform="translate(160,130)">
+    <text class="text label" x="0" y="-24">Capability Class</text>
+    <text class="text label" x="210" y="-24">No Gate</text>
+    <text class="text label" x="390" y="-24">Policy Gate</text>
+    <text class="text label" x="590" y="-24">Human Gate</text>
+    <text class="text label" x="790" y="-24">Release Gate</text>
+
+    <rect class="cell0" x="190" y="0" width="180" height="90"/><rect class="cell1" x="370" y="0" width="200" height="90"/><rect class="cell2" x="570" y="0" width="200" height="90"/><rect class="cell3" x="770" y="0" width="200" height="90"/>
+    <rect class="cell1" x="190" y="90" width="180" height="90"/><rect class="cell2" x="370" y="90" width="200" height="90"/><rect class="cell3" x="570" y="90" width="200" height="90"/><rect class="cell4" x="770" y="90" width="200" height="90"/>
+    <rect class="cell2" x="190" y="180" width="180" height="90"/><rect class="cell3" x="370" y="180" width="200" height="90"/><rect class="cell4" x="570" y="180" width="200" height="90"/><rect class="cell4" x="770" y="180" width="200" height="90"/>
+    <rect class="cell3" x="190" y="270" width="180" height="90"/><rect class="cell4" x="370" y="270" width="200" height="90"/><rect class="cell4" x="570" y="270" width="200" height="90"/><rect class="cell4" x="770" y="270" width="200" height="90"/>
+    <rect class="cell4" x="190" y="360" width="180" height="90"/><rect class="cell4" x="370" y="360" width="200" height="90"/><rect class="cell4" x="570" y="360" width="200" height="90"/><rect class="cell4" x="770" y="360" width="200" height="90"/>
+
+    <g class="grid">
+      <path d="M190 0 H970 M190 90 H970 M190 180 H970 M190 270 H970 M190 360 H970 M190 450 H970"/>
+      <path d="M190 0 V450 M370 0 V450 M570 0 V450 M770 0 V450 M970 0 V450"/>
+    </g>
+    <path class="axis" d="M190 0 H970 V450 H190 Z"/>
+
+    <text class="text label" x="0" y="54">Read public</text>
+    <text class="text label" x="0" y="144">Read private</text>
+    <text class="text label" x="0" y="234">Write reversible</text>
+    <text class="text label" x="0" y="324">Execute code</text>
+    <text class="text label" x="0" y="414">Irreversible</text>
+
+    <text class="text small" x="220" y="54">allow</text><text class="text small" x="410" y="54">log</text><text class="text small" x="612" y="54">optional</text><text class="text small" x="812" y="54">batch review</text>
+    <text class="text small" x="220" y="144">mask</text><text class="text small" x="410" y="144">scope check</text><text class="text small" x="612" y="144">approve</text><text class="text small" x="812" y="144">audit pack</text>
+    <text class="text small" x="220" y="234">dry run</text><text class="text small" x="410" y="234">diff gate</text><text class="text small" x="612" y="234">approve diff</text><text class="text small" x="812" y="234">canary</text>
+    <text class="text small" x="220" y="324">sandbox</text><text class="text small" x="410" y="324">egress gate</text><text class="text small" x="612" y="324">approve cmd</text><text class="text small" x="812" y="324">signed run</text>
+    <text class="text small" x="220" y="414">deny</text><text class="text small" x="410" y="414">break glass</text><text class="text small" x="612" y="414">two-person</text><text class="text small" x="812" y="414">release board</text>
+  </g>
+
+  <rect class="badge" x="230" y="640" width="720" height="42" rx="8"/>
+  <text class="text small" x="256" y="666">The harness should move right or down when data sensitivity, irreversibility, autonomy level, or external side effects increase.</text>
+</svg>
