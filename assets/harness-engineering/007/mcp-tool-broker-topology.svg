@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720" role="img" aria-labelledby="title desc">
+  <title id="title">MCP Tool Broker Topology</title>
+  <desc id="desc">Topology of an agent harness using a tool broker between agents, MCP clients, MCP servers, and enterprise systems.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.host{fill:#e0f2fe;stroke:#0369a1;stroke-width:2}.broker{fill:#fef3c7;stroke:#b45309;stroke-width:2}.server{fill:#dcfce7;stroke:#15803d;stroke-width:2}.system{fill:#f1f5f9;stroke:#334155;stroke-width:2}.risk{fill:#fee2e2;stroke:#b91c1c;stroke-width:2}.text{font-family:Arial,Helvetica,sans-serif;fill:#0f172a}.title{font-size:28px;font-weight:700}.label{font-size:18px;font-weight:700}.small{font-size:14px}.arrow{stroke:#475569;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.dash{stroke:#64748b;stroke-width:2;stroke-dasharray:7 6;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker>
+  </defs>
+  <rect class="bg" width="1180" height="720"/>
+  <text class="text title" x="52" y="56">MCP Tool Broker Topology</text>
+  <text class="text small" x="54" y="84">A brokered topology lets the harness centralize discovery, permission checks, audit, and fallback across heterogeneous tool providers.</text>
+
+  <rect class="host" x="70" y="170" width="220" height="130" rx="14"/>
+  <text class="text label" x="112" y="210">Agent Harness</text>
+  <text class="text small" x="112" y="238">planner</text>
+  <text class="text small" x="112" y="260">context builder</text>
+  <text class="text small" x="112" y="282">policy state</text>
+
+  <rect class="broker" x="390" y="140" width="300" height="190" rx="14"/>
+  <text class="text label" x="446" y="180">Tool Broker</text>
+  <text class="text small" x="430" y="212">registry normalization</text>
+  <text class="text small" x="430" y="236">risk tier assignment</text>
+  <text class="text small" x="430" y="260">approval orchestration</text>
+  <text class="text small" x="430" y="284">trace and replay envelope</text>
+
+  <rect class="server" x="795" y="90" width="250" height="100" rx="12"/>
+  <text class="text label" x="852" y="130">MCP Server</text>
+  <text class="text small" x="844" y="158">Git, Docs, CRM tools</text>
+  <rect class="server" x="795" y="245" width="250" height="100" rx="12"/>
+  <text class="text label" x="850" y="285">Native Tools</text>
+  <text class="text small" x="844" y="313">function calls, SDK tools</text>
+  <rect class="risk" x="795" y="400" width="250" height="100" rx="12"/>
+  <text class="text label" x="838" y="440">Privileged Tools</text>
+  <text class="text small" x="844" y="468">shell, browser, deploy</text>
+
+  <rect class="system" x="190" y="470" width="230" height="100" rx="12"/>
+  <text class="text label" x="232" y="510">Audit Store</text>
+  <text class="text small" x="232" y="538">trace, policy, outputs</text>
+  <rect class="system" x="500" y="470" width="230" height="100" rx="12"/>
+  <text class="text label" x="535" y="510">Secret Vault</text>
+  <text class="text small" x="535" y="538">scoped credentials</text>
+
+  <path class="arrow" d="M290 235 H390"/>
+  <path class="arrow" d="M690 190 C735 170 750 140 795 140"/>
+  <path class="arrow" d="M690 235 H795"/>
+  <path class="arrow" d="M690 280 C735 310 750 450 795 450"/>
+  <path class="dash" d="M540 330 C520 410 400 430 320 470"/>
+  <path class="dash" d="M610 330 C650 385 652 430 615 470"/>
+  <path class="dash" d="M500 470 C430 400 330 350 250 300"/>
+
+  <rect class="system" x="70" y="610" width="1040" height="52" rx="10"/>
+  <text class="text small" x="100" y="641">Topology principle: agents discover capabilities through the broker, but credentials, approvals, and replayable evidence remain controlled by the harness.</text>
+</svg>
