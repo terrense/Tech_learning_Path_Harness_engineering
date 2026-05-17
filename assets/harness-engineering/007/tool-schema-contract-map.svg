@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720" role="img" aria-labelledby="title desc">
+  <title id="title">Tool Schema Contract Map</title>
+  <desc id="desc">A deterministic diagram showing how a tool schema contract connects intent, input schema, policy, executor, output schema, and trace evidence.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:#ffffff;stroke:#334155;stroke-width:2}.accent{fill:#e0f2fe;stroke:#0369a1;stroke-width:2}.risk{fill:#fee2e2;stroke:#b91c1c;stroke-width:2}.ok{fill:#dcfce7;stroke:#15803d;stroke-width:2}.warn{fill:#fef3c7;stroke:#b45309;stroke-width:2}.text{font-family:Arial,Helvetica,sans-serif;fill:#0f172a}.title{font-size:28px;font-weight:700}.label{font-size:18px;font-weight:700}.small{font-size:14px}.arrow{stroke:#475569;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.dash{stroke:#64748b;stroke-width:2;stroke-dasharray:7 6;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker>
+  </defs>
+  <rect class="bg" width="1180" height="720"/>
+  <text class="text title" x="52" y="58">Tool Schema Contract Map</text>
+  <text class="text small" x="54" y="84">Schema is not decoration; it is the executable boundary between model intent and side-effecting systems.</text>
+
+  <rect class="accent" x="60" y="150" width="190" height="92" rx="12"/>
+  <text class="text label" x="86" y="184">Model Intent</text>
+  <text class="text small" x="86" y="210">goal, arguments,</text>
+  <text class="text small" x="86" y="230">uncertainty</text>
+
+  <rect class="panel" x="320" y="120" width="230" height="152" rx="12"/>
+  <text class="text label" x="348" y="154">Input Schema</text>
+  <text class="text small" x="348" y="184">type constraints</text>
+  <text class="text small" x="348" y="206">required fields</text>
+  <text class="text small" x="348" y="228">closed objects</text>
+  <text class="text small" x="348" y="250">semantic hints</text>
+
+  <rect class="warn" x="625" y="120" width="230" height="152" rx="12"/>
+  <text class="text label" x="652" y="154">Policy Envelope</text>
+  <text class="text small" x="652" y="184">risk tier</text>
+  <text class="text small" x="652" y="206">approval rule</text>
+  <text class="text small" x="652" y="228">sandbox profile</text>
+  <text class="text small" x="652" y="250">rate limit</text>
+
+  <rect class="risk" x="930" y="150" width="190" height="92" rx="12"/>
+  <text class="text label" x="962" y="184">Executor</text>
+  <text class="text small" x="962" y="210">API, shell, DB,</text>
+  <text class="text small" x="962" y="230">browser, MCP</text>
+
+  <rect class="ok" x="320" y="430" width="230" height="126" rx="12"/>
+  <text class="text label" x="348" y="464">Output Schema</text>
+  <text class="text small" x="348" y="494">structured result</text>
+  <text class="text small" x="348" y="516">error taxonomy</text>
+  <text class="text small" x="348" y="538">resource links</text>
+
+  <rect class="panel" x="625" y="430" width="230" height="126" rx="12"/>
+  <text class="text label" x="652" y="464">Trace Evidence</text>
+  <text class="text small" x="652" y="494">tool_call_id</text>
+  <text class="text small" x="652" y="516">policy decision</text>
+  <text class="text small" x="652" y="538">latency and diff</text>
+
+  <path class="arrow" d="M250 196 H320"/>
+  <path class="arrow" d="M550 196 H625"/>
+  <path class="arrow" d="M855 196 H930"/>
+  <path class="arrow" d="M1025 242 C1025 350 870 388 855 462"/>
+  <path class="arrow" d="M625 493 H550"/>
+  <path class="dash" d="M435 430 C370 360 373 310 435 272"/>
+  <path class="dash" d="M740 430 C805 360 802 310 740 272"/>
+
+  <rect class="panel" x="74" y="585" width="1030" height="70" rx="12"/>
+  <text class="text label" x="105" y="628">Harness invariant:</text>
+  <text class="text small" x="280" y="628">no tool execution occurs without typed input, explicit policy, bounded executor, typed output, and auditable evidence.</text>
+</svg>
