@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Rubric Scoring Pipeline</title>
+  <desc id="desc">A scoring pipeline for agent evaluation that combines exact checks, trace checks, model-graded rubrics, and governance thresholds.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .lane { fill: #ffffff; stroke: #334155; stroke-width: 2; rx: 18; }
+      .check { fill: #ccfbf1; stroke: #0f766e; stroke-width: 2; rx: 15; }
+      .trace { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 2; rx: 15; }
+      .judge { fill: #f5d0fe; stroke: #a21caf; stroke-width: 2; rx: 15; }
+      .gate { fill: #ffedd5; stroke: #c2410c; stroke-width: 2; rx: 15; }
+      .text { font-family: Arial, Helvetica, sans-serif; fill: #0f172a; }
+      .title { font-size: 30px; font-weight: 700; }
+      .label { font-size: 19px; font-weight: 700; }
+      .small { font-size: 14px; }
+      .arrow { stroke: #334155; stroke-width: 3; marker-end: url(#arrow); fill: none; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="620"/>
+  <text class="text title" x="60" y="58">Rubric Scoring Pipeline</text>
+  <text class="text small" x="60" y="86">Scoring should combine deterministic assertions and calibrated rubric judgment.</text>
+  <rect class="lane" x="60" y="125" width="1080" height="410"/>
+  <rect class="check" x="100" y="205" width="175" height="115"/>
+  <text class="text label" x="132" y="244">Exact Checks</text>
+  <text class="text small" x="125" y="273">schema validity</text>
+  <text class="text small" x="125" y="295">artifact diff</text>
+  <rect class="trace" x="330" y="205" width="175" height="115"/>
+  <text class="text label" x="366" y="244">Trace Checks</text>
+  <text class="text small" x="360" y="273">tool sequence</text>
+  <text class="text small" x="360" y="295">policy events</text>
+  <rect class="judge" x="560" y="205" width="175" height="115"/>
+  <text class="text label" x="596" y="244">Rubric Judge</text>
+  <text class="text small" x="590" y="273">task quality</text>
+  <text class="text small" x="590" y="295">reasoned score</text>
+  <rect class="gate" x="790" y="205" width="175" height="115"/>
+  <text class="text label" x="824" y="244">Aggregation</text>
+  <text class="text small" x="820" y="273">weighted score</text>
+  <text class="text small" x="820" y="295">confidence</text>
+  <rect class="gate" x="1000" y="205" width="95" height="115"/>
+  <text class="text label" x="1018" y="244">Gate</text>
+  <text class="text small" x="1019" y="273">pass</text>
+  <text class="text small" x="1019" y="295">fail</text>
+  <path class="arrow" d="M275 262 H328"/>
+  <path class="arrow" d="M505 262 H558"/>
+  <path class="arrow" d="M735 262 H788"/>
+  <path class="arrow" d="M965 262 H998"/>
+  <rect class="lane" x="155" y="390" width="890" height="74"/>
+  <text class="text label" x="252" y="425">Every score keeps evidence pointers: input id, trace id, grader version, and run id.</text>
+  <text class="text small" x="334" y="449">This makes regressions explainable instead of merely visible.</text>
+</svg>
