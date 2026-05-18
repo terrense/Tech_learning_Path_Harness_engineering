@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Eval Dataset Lifecycle</title>
+  <desc id="desc">A deterministic diagram showing how production traces become curated agent evaluation datasets and regression gates.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7fafc; }
+      .panel { fill: #ffffff; stroke: #263238; stroke-width: 2; rx: 18; }
+      .stage { fill: #e0f2fe; stroke: #0369a1; stroke-width: 2; rx: 16; }
+      .store { fill: #ecfccb; stroke: #4d7c0f; stroke-width: 2; rx: 16; }
+      .gate { fill: #fff7ed; stroke: #c2410c; stroke-width: 2; rx: 16; }
+      .audit { fill: #fce7f3; stroke: #be185d; stroke-width: 2; rx: 16; }
+      .text { font-family: Arial, Helvetica, sans-serif; fill: #102027; }
+      .title { font-size: 30px; font-weight: 700; }
+      .label { font-size: 20px; font-weight: 700; }
+      .small { font-size: 15px; }
+      .arrow { stroke: #263238; stroke-width: 3; marker-end: url(#arrow); fill: none; }
+      .dash { stroke: #64748b; stroke-width: 2; stroke-dasharray: 8 7; marker-end: url(#arrow); fill: none; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#263238"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="640"/>
+  <text class="text title" x="60" y="58">Agent Eval Dataset Lifecycle</text>
+  <text class="text small" x="60" y="88">Production traces are transformed into versioned, replayable, rubric-graded regression assets.</text>
+  <rect class="panel" x="50" y="120" width="1100" height="450"/>
+  <rect class="stage" x="90" y="185" width="175" height="110"/>
+  <text class="text label" x="118" y="224">Trace Capture</text>
+  <text class="text small" x="112" y="254">messages</text>
+  <text class="text small" x="112" y="276">tool calls</text>
+  <rect class="stage" x="320" y="185" width="175" height="110"/>
+  <text class="text label" x="349" y="224">Triage</text>
+  <text class="text small" x="346" y="254">failure class</text>
+  <text class="text small" x="346" y="276">risk label</text>
+  <rect class="store" x="550" y="185" width="175" height="110"/>
+  <text class="text label" x="575" y="224">Fixture Store</text>
+  <text class="text small" x="578" y="254">frozen inputs</text>
+  <text class="text small" x="578" y="276">stubbed tools</text>
+  <rect class="gate" x="780" y="185" width="175" height="110"/>
+  <text class="text label" x="806" y="224">Rubric Gate</text>
+  <text class="text small" x="810" y="254">scores</text>
+  <text class="text small" x="810" y="276">thresholds</text>
+  <rect class="audit" x="970" y="185" width="135" height="110"/>
+  <text class="text label" x="993" y="224">Release</text>
+  <text class="text small" x="997" y="254">block</text>
+  <text class="text small" x="997" y="276">promote</text>
+  <path class="arrow" d="M265 240 H318"/>
+  <path class="arrow" d="M495 240 H548"/>
+  <path class="arrow" d="M725 240 H778"/>
+  <path class="arrow" d="M955 240 H968"/>
+  <rect class="store" x="215" y="390" width="220" height="105"/>
+  <text class="text label" x="246" y="430">Versioned Dataset</text>
+  <text class="text small" x="250" y="459">dataset_id, split, owner</text>
+  <rect class="gate" x="520" y="390" width="220" height="105"/>
+  <text class="text label" x="555" y="430">Regression Run</text>
+  <text class="text small" x="555" y="459">candidate vs baseline</text>
+  <rect class="audit" x="825" y="390" width="220" height="105"/>
+  <text class="text label" x="864" y="430">Governance Log</text>
+  <text class="text small" x="858" y="459">decision, evidence, diff</text>
+  <path class="dash" d="M407 296 V388"/>
+  <path class="arrow" d="M435 442 H518"/>
+  <path class="arrow" d="M740 442 H823"/>
+  <path class="dash" d="M934 390 C934 330 1038 330 1038 296"/>
+</svg>
