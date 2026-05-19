@@ -12,6 +12,7 @@ This series now uses the following structure:
 - Lesson 006 deepens the runtime discussion into context engineering: retrieval, memory selection, compaction, prompt-cache-aware layout, budget governance, and context evals inside an agent harness.
 - Lesson 007 turns from context to tool-use architecture: schema contracts, MCP/tool brokers, risk tiers, permission gates, sandboxed execution, side-effect control, and traceable tool evals.
 - Lesson 008 makes agent evaluation operational: trajectory datasets, deterministic tool stubs, rubric scoring, trace grading, regression dashboards, and release gates for agent harness changes.
+- Lesson 009 moves the series into production AgentOps: observability, agent SLOs, behavior drift detection, rollback, audit, incident response, and continuous improvement loops for deployed agent harnesses.
 
 ## Article Index
 
@@ -25,6 +26,7 @@ This series now uses the following structure:
 | 006 | [🧵 第六课：Context Engineering Inside Agent Harness：检索、记忆选择、压缩、预算与上下文治理](articles/harness-engineering/006-context-engineering-inside-agent-harness.md) | Context builder, retrieval, memory selection, compaction, context budget, prompt caching, context evals |
 | 007 | [🧰 第七课：Tool Use Architecture for Agent Harness：Schema、MCP、权限门、风险分层与副作用控制](articles/harness-engineering/007-tool-use-architecture-for-agent-harness.md) | Tool schema contracts, MCP/tool broker, risk tiers, permission gates, side-effect control, tool evals |
 | 008 | [🧪 第八课：Agent Evals In Practice：Trajectory Dataset、Deterministic Stub、Rubric Scoring 与 Regression Dashboard](articles/harness-engineering/008-agent-evals-in-practice.md) | Trajectory datasets, deterministic stubs, rubric scoring, trace grading, regression dashboards, release gates |
+| 009 | [🚀 第九课：Production Agent Operations：监控、回滚、审计、事故响应与持续改进](articles/harness-engineering/009-production-agent-operations.md) | Production AgentOps, observability, SLOs, drift detection, rollback, audit, incident response, continuous improvement |
 
 ## Repository Structure
 
@@ -40,6 +42,7 @@ articles/
     006-context-engineering-inside-agent-harness.md
     007-tool-use-architecture-for-agent-harness.md
     008-agent-evals-in-practice.md
+    009-production-agent-operations.md
 assets/
   harness-engineering/
     001/
@@ -77,6 +80,11 @@ assets/
       trajectory-fixture-taxonomy.svg
       rubric-scoring-pipeline.svg
       regression-dashboard-topology.svg
+    009/
+      agentops-control-loop.svg
+      agentops-observability-stack.svg
+      rollback-incident-lifecycle.svg
+      continuous-improvement-flywheel.svg
 templates/
   article-template.md
 ```
@@ -109,7 +117,6 @@ assets/harness-engineering/
 
 Potential next articles:
 
-- 🚀 Production Agent Operations: monitoring, rollback, audit, incident response, and continuous improvement.
 - 🧬 Multi-Agent Harnesses: delegation, context isolation, coordination protocols, and cross-agent trace evaluation.
 - 🛡️ Agent Release Governance: staged rollout, policy review, safety cases, versioning, and rollback readiness.
 - 🧠 Agent Memory Management: memory lifecycle, decay, consolidation, provenance, and privacy governance.
