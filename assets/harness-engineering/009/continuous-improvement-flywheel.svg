@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Continuous Improvement Flywheel</title>
+  <desc id="desc">A continuous improvement flywheel for production AI agent operations, connecting incidents, evals, releases, and governance.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .circle { fill: #ffffff; stroke: #111827; stroke-width: 2; }
+      .hub { fill: #fef9c3; stroke: #a16207; stroke-width: 2; }
+      .text { font-family: Arial, Helvetica, sans-serif; fill: #111827; }
+      .title { font-size: 31px; font-weight: 700; }
+      .label { font-size: 18px; font-weight: 700; text-anchor: middle; }
+      .small { font-size: 14px; text-anchor: middle; }
+      .arrow { stroke: #334155; stroke-width: 4; marker-end: url(#arrow); fill: none; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <text class="text title" x="70" y="64">Continuous Improvement Flywheel</text>
+  <text class="text small" x="290" y="94">Production AgentOps converts every controlled failure into stronger datasets, policies, and release gates.</text>
+
+  <circle class="hub" cx="600" cy="360" r="105"/>
+  <text class="text label" x="600" y="345">AgentOps</text>
+  <text class="text small" x="600" y="374">evidence-driven</text>
+  <text class="text small" x="600" y="397">harness evolution</text>
+
+  <circle class="circle" cx="600" cy="135" r="78"/>
+  <text class="text label" x="600" y="122">Observe</text>
+  <text class="text small" x="600" y="150">trace and SLO</text>
+
+  <circle class="circle" cx="830" cy="250" r="78"/>
+  <text class="text label" x="830" y="237">Diagnose</text>
+  <text class="text small" x="830" y="265">root cause</text>
+
+  <circle class="circle" cx="830" cy="485" r="78"/>
+  <text class="text label" x="830" y="472">Codify</text>
+  <text class="text small" x="830" y="500">eval and policy</text>
+
+  <circle class="circle" cx="600" cy="595" r="78"/>
+  <text class="text label" x="600" y="582">Release</text>
+  <text class="text small" x="600" y="610">gate and canary</text>
+
+  <circle class="circle" cx="370" cy="485" r="78"/>
+  <text class="text label" x="370" y="472">Rollback</text>
+  <text class="text small" x="370" y="500">contain impact</text>
+
+  <circle class="circle" cx="370" cy="250" r="78"/>
+  <text class="text label" x="370" y="237">Govern</text>
+  <text class="text small" x="370" y="265">risk and audit</text>
+
+  <path class="arrow" d="M672 166 C728 184 764 204 788 222"/>
+  <path class="arrow" d="M856 324 C864 374 862 407 849 431"/>
+  <path class="arrow" d="M785 548 C730 582 690 594 678 595"/>
+  <path class="arrow" d="M522 595 C472 585 428 556 405 535"/>
+  <path class="arrow" d="M345 411 C333 358 334 322 347 303"/>
+  <path class="arrow" d="M414 185 C464 151 508 138 522 136"/>
+</svg>
