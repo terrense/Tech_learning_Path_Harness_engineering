@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Production AgentOps Control Loop</title>
+  <desc id="desc">A production operations control loop for AI agent harnesses, connecting telemetry, policy, incident response, rollback, learning, and release improvement.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .ring { fill: none; stroke: #334155; stroke-width: 3; stroke-dasharray: 10 8; }
+      .node { fill: #ffffff; stroke: #0f172a; stroke-width: 2; rx: 18; }
+      .observe { fill: #e0f2fe; stroke: #0369a1; }
+      .detect { fill: #fef9c3; stroke: #a16207; }
+      .decide { fill: #ede9fe; stroke: #6d28d9; }
+      .act { fill: #dcfce7; stroke: #15803d; }
+      .learn { fill: #fee2e2; stroke: #b91c1c; }
+      .text { font-family: Arial, Helvetica, sans-serif; fill: #0f172a; }
+      .title { font-size: 31px; font-weight: 700; }
+      .label { font-size: 20px; font-weight: 700; }
+      .small { font-size: 15px; }
+      .arrow { stroke: #334155; stroke-width: 3; marker-end: url(#arrow); fill: none; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <text class="text title" x="70" y="64">Production AgentOps Control Loop</text>
+  <text class="text small" x="70" y="94">AgentOps turns traces, policies, incident evidence, rollback decisions, and postmortem learning into one operational loop.</text>
+  <circle class="ring" cx="600" cy="370" r="230"/>
+
+  <rect class="node observe" x="455" y="130" width="290" height="105"/>
+  <text class="text label" x="526" y="171">Observe</text>
+  <text class="text small" x="493" y="202">traces, metrics, logs, artifacts</text>
+
+  <rect class="node detect" x="790" y="260" width="285" height="105"/>
+  <text class="text label" x="872" y="301">Detect</text>
+  <text class="text small" x="828" y="332">SLO breach, policy drift, anomalies</text>
+
+  <rect class="node decide" x="700" y="510" width="300" height="105"/>
+  <text class="text label" x="780" y="551">Decide</text>
+  <text class="text small" x="737" y="582">rollback, throttle, human gate</text>
+
+  <rect class="node act" x="200" y="510" width="300" height="105"/>
+  <text class="text label" x="303" y="551">Act</text>
+  <text class="text small" x="238" y="582">quarantine, patch, reroute, notify</text>
+
+  <rect class="node learn" x="125" y="260" width="285" height="105"/>
+  <text class="text label" x="206" y="301">Learn</text>
+  <text class="text small" x="163" y="332">eval case, runbook, policy update</text>
+
+  <path class="arrow" d="M710 225 C805 235 860 245 902 260"/>
+  <path class="arrow" d="M950 365 C955 430 925 480 880 510"/>
+  <path class="arrow" d="M700 565 H502"/>
+  <path class="arrow" d="M320 510 C250 455 230 415 245 365"/>
+  <path class="arrow" d="M405 275 C460 225 510 215 550 232"/>
+
+  <rect class="node" x="465" y="310" width="270" height="125"/>
+  <text class="text label" x="526" y="352">Harness State</text>
+  <text class="text small" x="505" y="384">model, prompt, context</text>
+  <text class="text small" x="505" y="407">tools, permissions, memory</text>
+</svg>
