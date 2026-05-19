@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">AgentOps Observability Stack</title>
+  <desc id="desc">A layered observability stack for production AI agent harnesses, from raw events to operational decisions.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .layer { stroke: #0f172a; stroke-width: 2; rx: 16; }
+      .l1 { fill: #e0f2fe; }
+      .l2 { fill: #dcfce7; }
+      .l3 { fill: #fef9c3; }
+      .l4 { fill: #ede9fe; }
+      .l5 { fill: #fee2e2; }
+      .text { font-family: Arial, Helvetica, sans-serif; fill: #0f172a; }
+      .title { font-size: 31px; font-weight: 700; }
+      .label { font-size: 21px; font-weight: 700; }
+      .small { font-size: 15px; }
+      .arrow { stroke: #334155; stroke-width: 3; marker-end: url(#arrow); fill: none; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="700"/>
+  <text class="text title" x="70" y="62">AgentOps Observability Stack</text>
+  <text class="text small" x="70" y="92">Production visibility must connect semantic agent traces to SLOs, risk controls, and release actions.</text>
+
+  <rect class="layer l1" x="125" y="135" width="950" height="82"/>
+  <text class="text label" x="170" y="168">1. Event Capture</text>
+  <text class="text small" x="170" y="196">LLM calls, tool calls, context builds, memory reads, permissions, artifacts, user-visible outputs</text>
+
+  <rect class="layer l2" x="125" y="250" width="950" height="82"/>
+  <text class="text label" x="170" y="283">2. Semantic Normalization</text>
+  <text class="text small" x="170" y="311">OpenTelemetry GenAI attributes, trace IDs, session IDs, risk labels, policy decisions, cost fields</text>
+
+  <rect class="layer l3" x="125" y="365" width="950" height="82"/>
+  <text class="text label" x="170" y="398">3. Aggregation And SLOs</text>
+  <text class="text small" x="170" y="426">success rate, intervention rate, unsafe-action block rate, rollback rate, latency, budget burn</text>
+
+  <rect class="layer l4" x="125" y="480" width="950" height="82"/>
+  <text class="text label" x="170" y="513">4. Diagnosis Workbench</text>
+  <text class="text small" x="170" y="541">trace drilldown, failure clustering, replay, diff against baseline, policy simulator</text>
+
+  <rect class="layer l5" x="125" y="595" width="950" height="70"/>
+  <text class="text label" x="170" y="627">5. Operational Decision</text>
+  <text class="text small" x="170" y="653">canary promote, rollback, human review, incident declaration, eval dataset update</text>
+
+  <path class="arrow" d="M600 217 V248"/>
+  <path class="arrow" d="M600 332 V363"/>
+  <path class="arrow" d="M600 447 V478"/>
+  <path class="arrow" d="M600 562 V593"/>
+</svg>
