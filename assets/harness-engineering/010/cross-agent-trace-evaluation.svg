@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">Cross-Agent Trace Evaluation</title>
+  <desc id="desc">A trace evaluation pipeline for multi-agent systems, showing collection, normalization, causal graph, rubric scoring, and release gates.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#334155"/>
+    </marker>
+    <style>
+      .bg{fill:#fdfdfd}
+      .box{fill:#ffffff;stroke:#cbd5e1;stroke-width:2}
+      .blue{fill:#eff6ff;stroke:#2563eb;stroke-width:2}
+      .green{fill:#ecfdf5;stroke:#059669;stroke-width:2}
+      .yellow{fill:#fffbeb;stroke:#d97706;stroke-width:2}
+      .red{fill:#fff1f2;stroke:#e11d48;stroke-width:2}
+      .line{stroke:#334155;stroke-width:2.2;fill:none;marker-end:url(#arrow)}
+      text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#111827}
+      .h{font-size:25px;font-weight:700}
+      .m{font-size:15px;font-weight:700}
+      .s{font-size:12.5px;fill:#475569}
+      .tiny{font-size:11px;fill:#64748b}
+    </style>
+  </defs>
+  <rect class="bg" width="1120" height="620"/>
+  <text class="h" x="46" y="56">Cross-Agent Trace Evaluation Pipeline</text>
+  <text class="s" x="46" y="82">The score is derived from causal behavior across agents, not only the final response.</text>
+
+  <rect class="blue" x="56" y="145" width="180" height="88" rx="16"/>
+  <text class="m" x="96" y="176">Agent Spans</text>
+  <text class="s" x="82" y="200">turns, handoffs</text>
+  <text class="tiny" x="84" y="218">planner, executor, reviewer</text>
+
+  <rect class="blue" x="56" y="278" width="180" height="88" rx="16"/>
+  <text class="m" x="96" y="309">Tool Spans</text>
+  <text class="s" x="84" y="333">inputs, outputs</text>
+  <text class="tiny" x="84" y="351">side effects, cost, latency</text>
+
+  <rect class="blue" x="56" y="411" width="180" height="88" rx="16"/>
+  <text class="m" x="91" y="442">Policy Events</text>
+  <text class="s" x="84" y="466">approvals, denials</text>
+  <text class="tiny" x="84" y="484">risk tier, lease id</text>
+
+  <rect class="box" x="318" y="248" width="178" height="112" rx="16"/>
+  <text class="m" x="353" y="283">Normalize</text>
+  <text class="s" x="347" y="308">schema, redaction,</text>
+  <text class="s" x="358" y="329">stable ids</text>
+
+  <rect class="box" x="578" y="248" width="178" height="112" rx="16"/>
+  <text class="m" x="610" y="283">Causal Graph</text>
+  <text class="s" x="608" y="308">depends-on edges,</text>
+  <text class="s" x="611" y="329">ownership paths</text>
+
+  <rect class="yellow" x="838" y="145" width="210" height="88" rx="16"/>
+  <text class="m" x="889" y="176">Rubric Score</text>
+  <text class="s" x="873" y="200">quality, safety, efficiency</text>
+  <text class="tiny" x="886" y="218">weighted evidence</text>
+
+  <rect class="green" x="838" y="278" width="210" height="88" rx="16"/>
+  <text class="m" x="890" y="309">Release Gate</text>
+  <text class="s" x="878" y="333">promote, hold, rollback</text>
+  <text class="tiny" x="875" y="351">threshold + trend</text>
+
+  <rect class="red" x="838" y="411" width="210" height="88" rx="16"/>
+  <text class="m" x="883" y="442">Learning Queue</text>
+  <text class="s" x="878" y="466">new evals, policies,</text>
+  <text class="s" x="900" y="484">runbooks</text>
+
+  <path class="line" d="M236 189 C270 224 286 265 318 286"/>
+  <path class="line" d="M236 322 L318 313"/>
+  <path class="line" d="M236 455 C270 412 286 365 318 334"/>
+  <path class="line" d="M496 304 L578 304"/>
+  <path class="line" d="M756 286 C790 246 812 204 838 189"/>
+  <path class="line" d="M756 316 L838 322"/>
+  <path class="line" d="M756 340 C790 388 812 430 838 455"/>
+  <path class="line" d="M943 233 L943 278"/>
+  <path class="line" d="M943 366 L943 411"/>
+</svg>
