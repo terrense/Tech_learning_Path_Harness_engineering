@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">Context Isolation Boundaries</title>
+  <desc id="desc">A diagram showing isolated context capsules for multiple agents, with shared facts, redaction, and merge gates.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#475569"/>
+    </marker>
+    <style>
+      .bg{fill:#fbfbf8}
+      .capsule{fill:#ffffff;stroke:#334155;stroke-width:2.4}
+      .shared{fill:#ecfeff;stroke:#0891b2;stroke-width:2}
+      .gate{fill:#fef3c7;stroke:#d97706;stroke-width:2}
+      .private{fill:#f1f5f9;stroke:#64748b;stroke-width:1.6}
+      .red{fill:#fff1f2;stroke:#e11d48;stroke-width:1.8}
+      .line{stroke:#475569;stroke-width:2;fill:none;marker-end:url(#arrow)}
+      .dash{stroke:#94a3b8;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}
+      text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#111827}
+      .h{font-size:25px;font-weight:700}
+      .m{font-size:16px;font-weight:700}
+      .s{font-size:13px;fill:#475569}
+      .label{font-size:12px;fill:#64748b}
+    </style>
+  </defs>
+  <rect class="bg" width="1120" height="620"/>
+  <text class="h" x="48" y="58">Context Isolation Boundaries</text>
+  <text class="s" x="48" y="84">Each agent receives a minimal context capsule; shared memory is merged through explicit gates.</text>
+
+  <rect class="capsule" x="70" y="145" width="270" height="310" rx="20"/>
+  <text class="m" x="144" y="180">Planner Capsule</text>
+  <rect class="private" x="100" y="210" width="210" height="48" rx="10"/>
+  <text class="s" x="124" y="240">goal, constraints, budget</text>
+  <rect class="private" x="100" y="274" width="210" height="48" rx="10"/>
+  <text class="s" x="128" y="304">risk taxonomy</text>
+  <rect class="red" x="100" y="338" width="210" height="48" rx="10"/>
+  <text class="s" x="122" y="368">no customer secrets</text>
+  <text class="label" x="118" y="420">private scratch is not broadcast</text>
+
+  <rect class="capsule" x="425" y="145" width="270" height="310" rx="20"/>
+  <text class="m" x="492" y="180">Executor Capsule</text>
+  <rect class="private" x="455" y="210" width="210" height="48" rx="10"/>
+  <text class="s" x="476" y="240">approved task envelope</text>
+  <rect class="private" x="455" y="274" width="210" height="48" rx="10"/>
+  <text class="s" x="486" y="304">tool schemas</text>
+  <rect class="red" x="455" y="338" width="210" height="48" rx="10"/>
+  <text class="s" x="477" y="368">write scope lease only</text>
+  <text class="label" x="470" y="420">tool outputs are normalized first</text>
+
+  <rect class="capsule" x="780" y="145" width="270" height="310" rx="20"/>
+  <text class="m" x="855" y="180">Reviewer Capsule</text>
+  <rect class="private" x="810" y="210" width="210" height="48" rx="10"/>
+  <text class="s" x="842" y="240">trace summary</text>
+  <rect class="private" x="810" y="274" width="210" height="48" rx="10"/>
+  <text class="s" x="848" y="304">rubric rules</text>
+  <rect class="red" x="810" y="338" width="210" height="48" rx="10"/>
+  <text class="s" x="834" y="368">masked chain detail</text>
+  <text class="label" x="830" y="420">critique returns scored evidence</text>
+
+  <rect class="shared" x="372" y="500" width="376" height="58" rx="16"/>
+  <text class="m" x="478" y="524">Shared Fact Layer</text>
+  <text class="s" x="432" y="545">stable facts, citations, artifacts, decisions</text>
+
+  <rect class="gate" x="377" y="52" width="366" height="54" rx="16"/>
+  <text class="m" x="488" y="76">Merge Gate</text>
+  <text class="s" x="434" y="96">redaction, provenance, conflict resolution</text>
+
+  <path class="line" d="M205 455 C270 490 320 504 372 520"/>
+  <path class="line" d="M560 455 L560 500"/>
+  <path class="line" d="M915 455 C852 490 804 506 748 520"/>
+  <path class="dash" d="M560 500 C560 380 560 220 560 106"/>
+  <path class="dash" d="M377 79 C292 92 244 112 205 145"/>
+  <path class="dash" d="M560 106 L560 145"/>
+  <path class="dash" d="M743 79 C824 94 874 112 915 145"/>
+</svg>
