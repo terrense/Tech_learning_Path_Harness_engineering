@@ -14,6 +14,7 @@ This series now uses the following structure:
 - Lesson 008 makes agent evaluation operational: trajectory datasets, deterministic tool stubs, rubric scoring, trace grading, regression dashboards, and release gates for agent harness changes.
 - Lesson 009 moves the series into production AgentOps: observability, agent SLOs, behavior drift detection, rollback, audit, incident response, and continuous improvement loops for deployed agent harnesses.
 - Lesson 010 extends production AgentOps into multi-agent harnesses: delegation topology, context isolation, capability leases, coordination protocols, cross-agent trace evaluation, and collaborative release governance.
+- Lesson 011 formalizes release governance for agent harnesses: release bundles, evidence gates, safety cases, staged rollout, version compatibility, rollback readiness, and policy-as-code promotion rules.
 
 ## Article Index
 
@@ -29,6 +30,7 @@ This series now uses the following structure:
 | 008 | [🧪 第八课：Agent Evals In Practice：Trajectory Dataset、Deterministic Stub、Rubric Scoring 与 Regression Dashboard](articles/harness-engineering/008-agent-evals-in-practice.md) | Trajectory datasets, deterministic stubs, rubric scoring, trace grading, regression dashboards, release gates |
 | 009 | [🚀 第九课：Production Agent Operations：监控、回滚、审计、事故响应与持续改进](articles/harness-engineering/009-production-agent-operations.md) | Production AgentOps, observability, SLOs, drift detection, rollback, audit, incident response, continuous improvement |
 | 010 | [🧬 第十课：Multi-Agent Harnesses：委派、上下文隔离、协同协议与跨 Agent Trace 评估](articles/harness-engineering/010-multi-agent-harnesses.md) | Multi-agent delegation, context isolation, capability leases, coordination protocols, cross-agent trace evals |
+| 011 | [🛡️ 第十一课：Agent Release Governance：分阶段发布、策略评审、安全论证、版本治理与回滚就绪](articles/harness-engineering/011-agent-release-governance.md) | Release bundles, evidence gates, safety cases, staged rollout, version governance, rollback readiness |
 
 ## Repository Structure
 
@@ -46,6 +48,7 @@ articles/
     008-agent-evals-in-practice.md
     009-production-agent-operations.md
     010-multi-agent-harnesses.md
+    011-agent-release-governance.md
 assets/
   harness-engineering/
     001/
@@ -93,6 +96,11 @@ assets/
       context-isolation-boundaries.svg
       coordination-protocol-state-machine.svg
       cross-agent-trace-evaluation.svg
+    011/
+      release-governance-control-plane.svg
+      safety-case-evidence-graph.svg
+      staged-rollout-ladder.svg
+      rollback-readiness-matrix.svg
 templates/
   article-template.md
 ```
@@ -125,9 +133,9 @@ assets/harness-engineering/
 
 Potential next articles:
 
-- 🛡️ Agent Release Governance: staged rollout, policy review, safety cases, versioning, and rollback readiness.
 - 🧠 Agent Memory Management: memory lifecycle, decay, consolidation, provenance, and privacy governance.
 - 🧭 Workflow Orchestration for Agent Harness: durable execution, retries, compensation, and human checkpoints.
+- 🏛️ Agent Policy Governance: organization policy hierarchy, exception handling, audit trails, and cross-team ownership.
 
 ## Author Contact
 
