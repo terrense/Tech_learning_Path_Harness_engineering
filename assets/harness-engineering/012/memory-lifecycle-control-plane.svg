@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Memory Lifecycle Control Plane</title>
+  <desc id="desc">A deterministic architecture diagram for AI agent memory lifecycle management inside an agent harness.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef6f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="0" fill="url(#bg)"/>
+  <text x="64" y="72" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#0f172a">Agent Memory Lifecycle Control Plane</text>
+  <text x="64" y="112" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#475569">capture -> classify -> store -> retrieve -> consolidate -> forget -> audit</text>
+
+  <rect x="58" y="150" width="1164" height="430" rx="18" fill="#ffffff" stroke="#cbd5e1" filter="url(#shadow)"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <g transform="translate(96 226)">
+      <rect width="138" height="94" rx="14" fill="#dbeafe" stroke="#2563eb"/>
+      <text x="69" y="37" text-anchor="middle" font-size="18" font-weight="700" fill="#1e3a8a">Capture</text>
+      <text x="69" y="64" text-anchor="middle" font-size="13" fill="#1e40af">events, traces</text>
+    </g>
+    <g transform="translate(266 226)">
+      <rect width="138" height="94" rx="14" fill="#dcfce7" stroke="#16a34a"/>
+      <text x="69" y="37" text-anchor="middle" font-size="18" font-weight="700" fill="#14532d">Classify</text>
+      <text x="69" y="64" text-anchor="middle" font-size="13" fill="#166534">risk, scope</text>
+    </g>
+    <g transform="translate(436 226)">
+      <rect width="138" height="94" rx="14" fill="#fef3c7" stroke="#d97706"/>
+      <text x="69" y="37" text-anchor="middle" font-size="18" font-weight="700" fill="#78350f">Store</text>
+      <text x="69" y="64" text-anchor="middle" font-size="13" fill="#92400e">ttl, lineage</text>
+    </g>
+    <g transform="translate(606 226)">
+      <rect width="138" height="94" rx="14" fill="#fae8ff" stroke="#c026d3"/>
+      <text x="69" y="37" text-anchor="middle" font-size="18" font-weight="700" fill="#701a75">Retrieve</text>
+      <text x="69" y="64" text-anchor="middle" font-size="13" fill="#86198f">rank, redact</text>
+    </g>
+    <g transform="translate(776 226)">
+      <rect width="138" height="94" rx="14" fill="#e0f2fe" stroke="#0284c7"/>
+      <text x="69" y="37" text-anchor="middle" font-size="18" font-weight="700" fill="#0c4a6e">Consolidate</text>
+      <text x="69" y="64" text-anchor="middle" font-size="13" fill="#075985">summarize</text>
+    </g>
+    <g transform="translate(946 226)">
+      <rect width="138" height="94" rx="14" fill="#fee2e2" stroke="#dc2626"/>
+      <text x="69" y="37" text-anchor="middle" font-size="18" font-weight="700" fill="#7f1d1d">Forget</text>
+      <text x="69" y="64" text-anchor="middle" font-size="13" fill="#991b1b">delete, tombstone</text>
+    </g>
+  </g>
+
+  <g stroke="#334155" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M234 273 H260"/>
+    <path d="M404 273 H430"/>
+    <path d="M574 273 H600"/>
+    <path d="M744 273 H770"/>
+    <path d="M914 273 H940"/>
+    <path d="M1015 320 C1015 418 200 418 165 320" stroke-dasharray="8 7"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="158" y="454" width="260" height="70" rx="12" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="288" y="486" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Policy Engine</text>
+    <text x="288" y="510" text-anchor="middle" font-size="13" fill="#475569">write rules, retention, consent</text>
+    <rect x="510" y="454" width="260" height="70" rx="12" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="640" y="486" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Evidence Ledger</text>
+    <text x="640" y="510" text-anchor="middle" font-size="13" fill="#475569">provenance, approvals, audits</text>
+    <rect x="862" y="454" width="260" height="70" rx="12" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="992" y="486" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Eval Gate</text>
+    <text x="992" y="510" text-anchor="middle" font-size="13" fill="#475569">leakage, staleness, utility</text>
+  </g>
+
+  <g stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M288 454 V336"/>
+    <path d="M640 454 V336"/>
+    <path d="M992 454 V336"/>
+  </g>
+
+  <text x="64" y="650" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#64748b">Lesson 012 asset - deterministic SVG for repository-native technical writing.</text>
+</svg>
