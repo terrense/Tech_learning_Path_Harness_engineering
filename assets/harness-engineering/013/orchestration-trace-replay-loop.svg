@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Orchestration Trace Replay Loop</title>
+  <desc id="desc">A loop connecting production workflow traces, deterministic replay, trajectory grading, policy repair, and release governance.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbf7ff}
+      .node{fill:#ffffff;stroke:#581c87;stroke-width:2}
+      .eval{fill:#f0fdf4;stroke:#15803d;stroke-width:2}
+      .policy{fill:#fff7ed;stroke:#c2410c;stroke-width:2}
+      .text{font-family:Arial,Helvetica,sans-serif;fill:#1e1b4b}
+      .title{font-size:34px;font-weight:700}
+      .label{font-size:21px;font-weight:700}
+      .small{font-size:16px}
+      .arrow{stroke:#6b21a8;stroke-width:4;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#6b21a8"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="720"/>
+  <text class="text title" x="60" y="64">Orchestration Trace Replay Loop</text>
+  <text class="text small" x="60" y="98">The workflow harness improves by replaying failed trajectories under deterministic stubs before changing production policy.</text>
+
+  <rect class="node" x="95" y="210" width="230" height="105" rx="8"/>
+  <text class="text label" x="132" y="252">Production Trace</text>
+  <text class="text small" x="132" y="282">spans, tool calls, gates</text>
+
+  <rect class="eval" x="485" y="120" width="250" height="105" rx="8"/>
+  <text class="text label" x="528" y="162">Replay Harness</text>
+  <text class="text small" x="528" y="192">frozen model outputs</text>
+
+  <rect class="eval" x="875" y="210" width="230" height="105" rx="8"/>
+  <text class="text label" x="912" y="252">Trajectory Grade</text>
+  <text class="text small" x="912" y="282">semantic and policy score</text>
+
+  <rect class="policy" x="875" y="435" width="230" height="105" rx="8"/>
+  <text class="text label" x="912" y="477">Policy Repair</text>
+  <text class="text small" x="912" y="507">retry, gate, prompt, tool</text>
+
+  <rect class="node" x="485" y="525" width="250" height="105" rx="8"/>
+  <text class="text label" x="525" y="567">Release Bundle</text>
+  <text class="text small" x="525" y="597">evidence and rollout plan</text>
+
+  <rect class="policy" x="95" y="435" width="230" height="105" rx="8"/>
+  <text class="text label" x="132" y="477">Workflow Version</text>
+  <text class="text small" x="132" y="507">DAG, state, compensation</text>
+
+  <path class="arrow" d="M325 244 C405 145 420 150 485 172"/>
+  <path class="arrow" d="M735 172 C820 150 850 200 875 244"/>
+  <path class="arrow" d="M990 315 V435"/>
+  <path class="arrow" d="M875 500 C790 610 775 605 735 578"/>
+  <path class="arrow" d="M485 578 C405 612 350 545 325 500"/>
+  <path class="arrow" d="M210 435 V315"/>
+  <text class="text small" x="450" y="330">Replay is not a demo; it is the regression test for the workflow contract.</text>
+</svg>
