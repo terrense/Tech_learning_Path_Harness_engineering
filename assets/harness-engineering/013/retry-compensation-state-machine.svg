@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Retry and Compensation State Machine</title>
+  <desc id="desc">State machine for agent workflow orchestration with planned, running, retrying, compensated, escalated, completed, and failed states.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fffdf7}
+      .state{fill:#ffffff;stroke:#1f2937;stroke-width:2}
+      .good{fill:#ecfdf5;stroke:#059669;stroke-width:2}
+      .warn{fill:#fffbeb;stroke:#d97706;stroke-width:2}
+      .bad{fill:#fef2f2;stroke:#dc2626;stroke-width:2}
+      .text{font-family:Arial,Helvetica,sans-serif;fill:#111827}
+      .title{font-size:34px;font-weight:700}
+      .label{font-size:22px;font-weight:700}
+      .small{font-size:17px}
+      .arrow{stroke:#4b5563;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .red{stroke:#dc2626}
+      .green{stroke:#059669}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="720"/>
+  <text class="text title" x="60" y="64">Retry, Timeout, and Compensation State Machine</text>
+  <text class="text small" x="60" y="98">Every side-effecting step must declare retry semantics, idempotency boundary, and compensating action.</text>
+
+  <rect class="state" x="80" y="180" width="190" height="86" rx="42"/>
+  <text class="text label" x="124" y="232">Planned</text>
+
+  <rect class="state" x="360" y="180" width="190" height="86" rx="42"/>
+  <text class="text label" x="410" y="232">Leased</text>
+
+  <rect class="warn" x="640" y="180" width="190" height="86" rx="42"/>
+  <text class="text label" x="684" y="232">Running</text>
+
+  <rect class="warn" x="920" y="180" width="190" height="86" rx="42"/>
+  <text class="text label" x="966" y="232">Retrying</text>
+
+  <rect class="good" x="640" y="390" width="190" height="86" rx="42"/>
+  <text class="text label" x="675" y="442">Completed</text>
+
+  <rect class="bad" x="920" y="390" width="190" height="86" rx="42"/>
+  <text class="text label" x="962" y="442">Failed</text>
+
+  <rect class="state" x="360" y="390" width="190" height="86" rx="42"/>
+  <text class="text label" x="397" y="442">Escalated</text>
+
+  <rect class="bad" x="80" y="390" width="190" height="86" rx="42"/>
+  <text class="text label" x="105" y="442">Compensated</text>
+
+  <path class="arrow" d="M270 223 H360"/>
+  <path class="arrow" d="M550 223 H640"/>
+  <path class="arrow" d="M830 223 H920"/>
+  <path class="arrow green" d="M735 266 V390"/>
+  <path class="arrow red" d="M1015 266 V390"/>
+  <path class="arrow" d="M920 433 H550"/>
+  <path class="arrow red" d="M360 433 H270"/>
+  <path class="arrow" d="M1015 180 C1015 108 735 108 735 180"/>
+  <path class="arrow" d="M455 390 C455 324 645 326 675 266"/>
+
+  <text class="text small" x="300" y="207">lease</text>
+  <text class="text small" x="575" y="207">start</text>
+  <text class="text small" x="842" y="207">timeout / transient error</text>
+  <text class="text small" x="750" y="334">success evidence</text>
+  <text class="text small" x="1030" y="334">retry budget spent</text>
+  <text class="text small" x="600" y="420">needs human decision</text>
+  <text class="text small" x="185" y="527">compensating action records a new event; it never erases the original side effect.</text>
+</svg>
