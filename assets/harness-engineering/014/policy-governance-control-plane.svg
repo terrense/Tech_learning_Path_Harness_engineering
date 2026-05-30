@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Policy Governance Control Plane</title>
+  <desc id="desc">A deterministic diagram showing policy intent, policy-as-code, simulation, decision service, enforcement points, audit ledger, and policy evaluations.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f9fb}.panel{fill:#ffffff;stroke:#203040;stroke-width:2}.head{fill:#203040}.headText{fill:#fff;font:700 20px Arial}.label{fill:#1d2a35;font:600 16px Arial}.small{fill:#40515f;font:13px Arial}.arrow{stroke:#2364aa;stroke-width:3;fill:none;marker-end:url(#arrow)}.audit{fill:#e8f1ff;stroke:#2364aa;stroke-width:2}.risk{fill:#fff4e5;stroke:#bd6b00;stroke-width:2}.ok{fill:#eaf7ee;stroke:#247a3d;stroke-width:2}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2364aa"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1120" height="620" rx="0"/>
+  <rect class="panel" x="40" y="44" width="1040" height="84" rx="8"/>
+  <rect class="head" x="40" y="44" width="1040" height="34" rx="8"/>
+  <text class="headText" x="62" y="68">Policy Governance Control Plane for Agent Harness</text>
+  <text class="small" x="62" y="103">The harness converts human policy intent into executable decisions, runtime evidence, and release gates.</text>
+
+  <rect class="panel" x="60" y="180" width="180" height="92" rx="8"/>
+  <text class="label" x="83" y="214">Human Intent</text>
+  <text class="small" x="83" y="239">risk boundaries</text>
+  <text class="small" x="83" y="258">ownership rules</text>
+
+  <rect class="panel" x="300" y="180" width="180" height="92" rx="8"/>
+  <text class="label" x="323" y="214">Policy Bundle</text>
+  <text class="small" x="323" y="239">versioned contract</text>
+  <text class="small" x="323" y="258">signed release</text>
+
+  <rect class="risk" x="540" y="180" width="180" height="92" rx="8"/>
+  <text class="label" x="563" y="214">Simulation</text>
+  <text class="small" x="563" y="239">fixtures</text>
+  <text class="small" x="563" y="258">adversarial traces</text>
+
+  <rect class="ok" x="780" y="180" width="180" height="92" rx="8"/>
+  <text class="label" x="803" y="214">Release Gate</text>
+  <text class="small" x="803" y="239">coverage threshold</text>
+  <text class="small" x="803" y="258">rollback plan</text>
+
+  <path class="arrow" d="M240 226 H300"/>
+  <path class="arrow" d="M480 226 H540"/>
+  <path class="arrow" d="M720 226 H780"/>
+
+  <rect class="panel" x="170" y="352" width="220" height="100" rx="8"/>
+  <text class="label" x="196" y="388">Decision Service</text>
+  <text class="small" x="196" y="413">allow / deny / review</text>
+  <text class="small" x="196" y="432">constraints + evidence</text>
+
+  <rect class="panel" x="450" y="352" width="220" height="100" rx="8"/>
+  <text class="label" x="476" y="388">Enforcement Points</text>
+  <text class="small" x="476" y="413">tool, memory, context</text>
+  <text class="small" x="476" y="432">workflow, release</text>
+
+  <rect class="audit" x="730" y="352" width="220" height="100" rx="8"/>
+  <text class="label" x="756" y="388">Audit Ledger</text>
+  <text class="small" x="756" y="413">decision joins trace</text>
+  <text class="small" x="756" y="432">exception lineage</text>
+
+  <path class="arrow" d="M870 272 C870 310 280 308 280 352"/>
+  <path class="arrow" d="M390 402 H450"/>
+  <path class="arrow" d="M670 402 H730"/>
+  <path class="arrow" d="M840 452 C840 535 245 535 245 452"/>
+  <text class="small" x="441" y="548">policy evals close the loop by feeding evidence back into the next policy bundle</text>
+</svg>
