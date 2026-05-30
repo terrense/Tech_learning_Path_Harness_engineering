@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">Exception Review Workflow</title>
+  <desc id="desc">A workflow diagram for bounded policy exceptions with evidence, owner approval, TTL, revocation, and post-run review.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8faf6}.step{fill:#fff;stroke:#263238;stroke-width:2}.gate{fill:#fff7df;stroke:#9a6a00;stroke-width:2}.danger{fill:#ffe9e9;stroke:#9b2226;stroke-width:2}.done{fill:#e8f7ef;stroke:#207a3f;stroke-width:2}.arrow{stroke:#246a9b;stroke-width:3;fill:none;marker-end:url(#arrow)}.title{font:700 22px Arial;fill:#1e2a32}.label{font:700 16px Arial;fill:#1e2a32}.small{font:13px Arial;fill:#40515f}</style>
+    </defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#246a9b"/></marker>
+  </defs>
+  <rect class="bg" width="1120" height="620"/>
+  <text class="title" x="54" y="58">Bounded Exception Review Workflow</text>
+  <text class="small" x="54" y="84">Exceptions are not shadow policy. They are scoped, time-bounded, owner-approved, and automatically auditable.</text>
+
+  <rect class="step" x="68" y="172" width="176" height="82" rx="8"/>
+  <text class="label" x="96" y="205">Request</text>
+  <text class="small" x="96" y="228">resource, action</text>
+  <text class="small" x="96" y="246">business reason</text>
+
+  <rect class="step" x="300" y="172" width="176" height="82" rx="8"/>
+  <text class="label" x="328" y="205">Evidence Pack</text>
+  <text class="small" x="328" y="228">trace, eval, risk</text>
+  <text class="small" x="328" y="246">rollback handle</text>
+
+  <rect class="gate" x="532" y="160" width="176" height="106" rx="8"/>
+  <text class="label" x="560" y="200">Owner Review</text>
+  <text class="small" x="560" y="224">security + product</text>
+  <text class="small" x="560" y="242">dual control</text>
+
+  <rect class="done" x="764" y="172" width="176" height="82" rx="8"/>
+  <text class="label" x="792" y="205">Lease Issued</text>
+  <text class="small" x="792" y="228">scope + TTL</text>
+  <text class="small" x="792" y="246">constraints</text>
+
+  <path class="arrow" d="M244 213 H300"/>
+  <path class="arrow" d="M476 213 H532"/>
+  <path class="arrow" d="M708 213 H764"/>
+
+  <rect class="step" x="182" y="386" width="196" height="90" rx="8"/>
+  <text class="label" x="214" y="421">Runtime Use</text>
+  <text class="small" x="214" y="444">decision ledger</text>
+  <text class="small" x="214" y="462">constraint monitor</text>
+
+  <rect class="danger" x="462" y="386" width="196" height="90" rx="8"/>
+  <text class="label" x="494" y="421">Revocation</text>
+  <text class="small" x="494" y="444">expiry or anomaly</text>
+  <text class="small" x="494" y="462">stop future calls</text>
+
+  <rect class="done" x="742" y="386" width="196" height="90" rx="8"/>
+  <text class="label" x="774" y="421">Post Review</text>
+  <text class="small" x="774" y="444">merge evidence</text>
+  <text class="small" x="774" y="462">improve policy</text>
+
+  <path class="arrow" d="M852 254 C852 327 280 315 280 386"/>
+  <path class="arrow" d="M378 431 H462"/>
+  <path class="arrow" d="M658 431 H742"/>
+  <path class="arrow" d="M840 386 C840 336 620 325 620 266"/>
+  <text class="small" x="120" y="552">Invariant: exception.scope must be narrower than the denied policy scope, and exception.expires_at must be enforced by the harness, not by convention.</text>
+</svg>
