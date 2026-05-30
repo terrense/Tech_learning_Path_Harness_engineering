@@ -17,6 +17,7 @@ This series now uses the following structure:
 - Lesson 011 formalizes release governance for agent harnesses: release bundles, evidence gates, safety cases, staged rollout, version compatibility, rollback readiness, and policy-as-code promotion rules.
 - Lesson 012 makes memory management a governed harness subsystem: lifecycle control, typed memory records, provenance lineage, retrieval authorization, decay, consolidation, privacy retention, deletion proof, and memory evals.
 - Lesson 013 turns long-running agent work into durable workflow orchestration: state machines, checkpoints, leases, idempotent tools, retry budgets, compensation, human gates, handoffs, trace replay, and workflow release governance.
+- Lesson 014 makes policy governance explicit: policy hierarchy, conflict resolution, enforcement points, exception workflows, audit evidence ledgers, policy evals, and cross-team ownership.
 
 ## Article Index
 
@@ -35,6 +36,7 @@ This series now uses the following structure:
 | 011 | [🛡️ 第十一课：Agent Release Governance：分阶段发布、策略评审、安全论证、版本治理与回滚就绪](articles/harness-engineering/011-agent-release-governance.md) | Release bundles, evidence gates, safety cases, staged rollout, version governance, rollback readiness |
 | 012 | [🧠 第十二课：Agent Memory Management：生命周期、来源谱系、衰减、隐私治理与可遗忘性](articles/harness-engineering/012-agent-memory-management.md) | Memory lifecycle, provenance lineage, retrieval authorization, decay, privacy retention, deletion proof, memory evals |
 | 013 | [🧭 第十三课：Workflow Orchestration for Agent Harness：持久执行、重试、补偿、人类检查点与轨迹回放](articles/harness-engineering/013-workflow-orchestration-for-agent-harness.md) | Durable execution, checkpoints, leases, idempotency, retry budgets, compensation, human gates, handoffs, trace replay |
+| 014 | [🏛️ 第十四课：Agent Policy Governance：策略层级、例外处理、审计证据与跨团队所有权](articles/harness-engineering/014-agent-policy-governance.md) | Policy hierarchy, conflict resolution, enforcement points, exception workflows, audit ledgers, policy evals |
 
 ## Repository Structure
 
@@ -55,6 +57,7 @@ articles/
     011-agent-release-governance.md
     012-agent-memory-management.md
     013-workflow-orchestration-for-agent-harness.md
+    014-agent-policy-governance.md
 assets/
   harness-engineering/
     001/
@@ -117,6 +120,11 @@ assets/
       retry-compensation-state-machine.svg
       checkpoint-human-gate-topology.svg
       orchestration-trace-replay-loop.svg
+    014/
+      policy-governance-control-plane.svg
+      policy-hierarchy-lattice.svg
+      exception-review-workflow.svg
+      audit-evidence-ledger.svg
 templates/
   article-template.md
 ```
@@ -126,7 +134,7 @@ templates/
 The writing style of this repository is:
 
 - long-form Markdown articles;
-- serious, scientific, third-person technical exposition;
+- serious, scientific third-person technical exposition;
 - expressive headings with sticker-style emoji markers;
 - many diagrams, Mermaid charts, tables, and runnable code examples;
 - reusable examples for engineering teams, AI systems, DevOps, testing, evaluation workflows, and agent runtime design.
@@ -149,9 +157,9 @@ assets/harness-engineering/
 
 Potential next articles:
 
-- 🏛️ Agent Policy Governance: organization policy hierarchy, exception handling, audit trails, and cross-team ownership.
 - 🔒 Agent Sandboxing and Capability Isolation: filesystem, network, identity, secrets, tool leases, and blast-radius reduction.
 - 📦 Agent Release Artifacts and Evidence Packaging: signed bundles, provenance, SBOM-like manifests, and rollback compatibility.
+- 🧮 Agent Cost, Latency, and Capacity Governance: budget policies, queueing, rate limits, and adaptive model routing.
 
 ## Author Contact
 
