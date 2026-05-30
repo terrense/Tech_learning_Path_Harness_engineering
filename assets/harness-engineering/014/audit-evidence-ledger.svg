@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">Audit Evidence Ledger</title>
+  <desc id="desc">A diagram joining agent trace spans, policy decisions, exception records, approval records, and release evidence into a queryable ledger.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f6f8fb}.table{fill:#ffffff;stroke:#24323d;stroke-width:2}.header{fill:#24323d}.headText{fill:white;font:700 15px Arial}.label{fill:#1f2d36;font:700 15px Arial}.small{fill:#40515f;font:13px Arial}.link{stroke:#2767a3;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.query{fill:#edf7ee;stroke:#24783b;stroke-width:2}</style>
+    </defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#2767a3"/></marker>
+  </defs>
+  <rect class="bg" width="1120" height="620"/>
+  <text class="label" x="56" y="58" style="font-size:22px">Policy Audit Evidence Ledger</text>
+  <text class="small" x="56" y="84">The audit layer is a normalized evidence model, not a folder of logs. It joins every policy decision to a traceable cause.</text>
+
+  <g transform="translate(60,140)">
+    <rect class="table" width="210" height="138" rx="8"/>
+    <rect class="header" width="210" height="34" rx="8"/>
+    <text class="headText" x="18" y="23">trace_span</text>
+    <text class="small" x="18" y="60">span_id</text>
+    <text class="small" x="18" y="84">agent_id</text>
+    <text class="small" x="18" y="108">tool_call_id</text>
+    <text class="small" x="18" y="130">input_hash</text>
+  </g>
+
+  <g transform="translate(330,140)">
+    <rect class="table" width="210" height="138" rx="8"/>
+    <rect class="header" width="210" height="34" rx="8"/>
+    <text class="headText" x="18" y="23">policy_decision</text>
+    <text class="small" x="18" y="60">decision_id</text>
+    <text class="small" x="18" y="84">policy_bundle_hash</text>
+    <text class="small" x="18" y="108">decision</text>
+    <text class="small" x="18" y="130">evidence_required</text>
+  </g>
+
+  <g transform="translate(600,140)">
+    <rect class="table" width="210" height="138" rx="8"/>
+    <rect class="header" width="210" height="34" rx="8"/>
+    <text class="headText" x="18" y="23">exception_record</text>
+    <text class="small" x="18" y="60">exception_id</text>
+    <text class="small" x="18" y="84">scope</text>
+    <text class="small" x="18" y="108">expires_at</text>
+    <text class="small" x="18" y="130">revoked_at</text>
+  </g>
+
+  <g transform="translate(870,140)">
+    <rect class="table" width="210" height="138" rx="8"/>
+    <rect class="header" width="210" height="34" rx="8"/>
+    <text class="headText" x="18" y="23">approval</text>
+    <text class="small" x="18" y="60">approval_id</text>
+    <text class="small" x="18" y="84">owner</text>
+    <text class="small" x="18" y="108">risk_acceptance</text>
+    <text class="small" x="18" y="130">signature</text>
+  </g>
+
+  <path class="link" d="M270 209 H330"/>
+  <path class="link" d="M540 209 H600"/>
+  <path class="link" d="M810 209 H870"/>
+
+  <rect class="query" x="214" y="392" width="692" height="114" rx="8"/>
+  <text class="label" x="246" y="428">Audit Query Examples</text>
+  <text class="small" x="246" y="456">Which denied tool calls were later approved by exception?</text>
+  <text class="small" x="246" y="480">Which policy bundle made this autonomous workflow step legal?</text>
+  <text class="small" x="246" y="504">Which owner accepted the risk, and did the exception expire before use?</text>
+  <path class="link" d="M435 278 C435 342 560 338 560 392"/>
+  <path class="link" d="M705 278 C705 342 560 338 560 392"/>
+</svg>
