@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">Policy Hierarchy Lattice</title>
+  <desc id="desc">A lattice showing enterprise, tenant, project, agent, tool, workflow, and emergency-stop policy precedence.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfbf8}.node{fill:#ffffff;stroke:#263238;stroke-width:2}.deny{fill:#ffe7e7;stroke:#a62626;stroke-width:2}.review{fill:#fff4d6;stroke:#946200;stroke-width:2}.allow{fill:#e8f7ef;stroke:#1c7a3a;stroke-width:2}.edge{stroke:#607d8b;stroke-width:2.5;fill:none}.title{font:700 22px Arial;fill:#1f2a33}.label{font:700 16px Arial;fill:#1f2a33}.small{font:13px Arial;fill:#41525f}.rank{font:700 13px Arial;fill:#607d8b}</style>
+  </defs>
+  <rect class="bg" width="1120" height="620"/>
+  <text class="title" x="56" y="58">Agent Harness Policy Hierarchy and Conflict Resolution</text>
+  <text class="small" x="56" y="84">Higher-order safety policy constrains lower-order autonomy. Explicit deny outranks review, and review outranks unconstrained allow.</text>
+
+  <rect class="deny" x="442" y="112" width="236" height="70" rx="8"/>
+  <text class="label" x="484" y="143">Emergency Stop</text>
+  <text class="small" x="480" y="165">non-negotiable override</text>
+
+  <rect class="node" x="134" y="230" width="210" height="70" rx="8"/>
+  <text class="label" x="187" y="260">Enterprise</text>
+  <text class="small" x="170" y="282">global legal and security</text>
+
+  <rect class="node" x="456" y="230" width="210" height="70" rx="8"/>
+  <text class="label" x="520" y="260">Tenant</text>
+  <text class="small" x="497" y="282">customer constraints</text>
+
+  <rect class="node" x="776" y="230" width="210" height="70" rx="8"/>
+  <text class="label" x="834" y="260">Project</text>
+  <text class="small" x="809" y="282">product-level rules</text>
+
+  <rect class="review" x="214" y="390" width="210" height="70" rx="8"/>
+  <text class="label" x="271" y="420">Agent Role</text>
+  <text class="small" x="260" y="442">delegated authority</text>
+
+  <rect class="review" x="456" y="390" width="210" height="70" rx="8"/>
+  <text class="label" x="516" y="420">Workflow</text>
+  <text class="small" x="498" y="442">step and checkpoint</text>
+
+  <rect class="allow" x="698" y="390" width="210" height="70" rx="8"/>
+  <text class="label" x="757" y="420">Tool Call</text>
+  <text class="small" x="742" y="442">resource + action</text>
+
+  <path class="edge" d="M560 182 L239 230"/>
+  <path class="edge" d="M560 182 L561 230"/>
+  <path class="edge" d="M560 182 L881 230"/>
+  <path class="edge" d="M239 300 L319 390"/>
+  <path class="edge" d="M561 300 L319 390"/>
+  <path class="edge" d="M561 300 L561 390"/>
+  <path class="edge" d="M881 300 L803 390"/>
+  <path class="edge" d="M561 300 L803 390"/>
+
+  <text class="rank" x="74" y="147">rank 0</text>
+  <text class="rank" x="74" y="267">rank 1-3</text>
+  <text class="rank" x="74" y="427">rank 4-6</text>
+  <text class="small" x="120" y="530">Conflict function: deny &gt; require_review &gt; allow_with_constraints &gt; allow. Narrower scope may add constraints but cannot weaken a higher-rank deny.</text>
+</svg>
